@@ -1,0 +1,77 @@
+html {
+  background-color: $slate-gray;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 200;
+  font-size: $default-em;
+  letter-spacing: .05em;
+  color: $creamy-white;
+  background-color: $hb-graphite-gray;
+}
+
+p {
+  font-weight: 300;
+  letter-spacing: .05em;
+}
+
+em {
+  font-weight: 600;
+  letter-spacing: .05em;
+}
+
+button {
+  font-size: $default-em;
+  color: $texas-sky-blue;
+  background-color: transparent;
+  border: .1em solid $texas-sky-blue;
+  &:focus {
+    outline: none;
+  }
+}
+
+input {
+  background-color: $creamy-white;
+  border: .1em solid $creamy-white;
+  color: $slate-gray;
+  &:focus {
+    outline:none;
+    background-color: $creamy-white;
+    border: .2em solid $texas-sky-blue;
+    color: $slate-gray;
+  }
+}
+
+input[type='radio'] {
+  -webkit-appearance: none;
+  height: $default-em * 1.25;
+  width: $default-em * 1.25;
+  border: .2em double white;
+  border-radius: 50%;
+  transition: background-color .2s linear;
+  &:hover {
+    cursor: pointer;
+    background-color: $texas-sky-blue;
+  }
+  &:focus {
+    outline: none;
+  }
+}
+
+footer {
+  background-color: $fourB-graphite-gray;
+
+  a {
+    text-decoration: none;
+  }
+
+  p {
+    text-align: center;
+    font-size: $default-em * 2;
+  }
+}
+
+.hidden {
+  display: none;
+}
