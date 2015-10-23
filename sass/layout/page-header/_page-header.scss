@@ -1,3 +1,26 @@
-.page-header {
-  padding: $default-em * 1;
+header {
+  text-align: center;
+  padding: 0em 0 5em 0;
+}
+
+.header-primary {
+  padding: 2em;
+}
+
+.header-secondary {
+  float: left;
+  width: 50%;
+  padding: 1em;
+}
+
+.secondary-headers {
+  overflow: auto;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.spacer-1, .spacer-2, .spacer-3, .spacer-4 {
+  float: left;
+  width: 25%;
+  height: 5em;
 }
