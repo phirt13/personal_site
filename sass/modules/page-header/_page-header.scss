@@ -1,8 +1,69 @@
 /*----- Footer Module -----*/
-.page-header {
-  font-family: 'NotCourierSans', courier;
-  font-size: $default-em * 3;
+.header-primary {
+  font-family: 'OpenSans', sans-serif;
+  font-size: $default-em * 5;
   text-align: center;
-  color: $burnt-orange;
-  background-color: $fourB-graphite-gray;
+  color: white;
+  background-color: transparent;
+  background-image: linear-gradient(90deg, #eb1496 10%, #ff991d 90%);
+}
+
+.secondary-headers {
+  color: black;
+}
+
+.header-secondary {
+  color: black;
+  font-size: 2em;
+  &:visited {
+    color: black;
+    text-decoration: none;
+  }
+
+}
+
+.artist {
+  background-color: white;
+  border-bottom: 2px solid rgba(255, 153, 29, 1);
+  border-right: 2px solid rgba(255, 153, 29, 1);
+  transition: background-color .4s linear, color .4s linear, border .4s linear;
+  &:hover {
+    background-color: rgba(255, 153, 29, 1);
+    color: white;
+  }
+}
+
+.dev {
+  background-color: white;
+  border-bottom: 2px solid rgba(235, 20, 150, 1);
+  border-left: 2px solid rgba(235, 20, 150, 1);
+  transition: background-color .4s linear, color .4s linear, border .4s linear;
+  &:hover {
+    background-color: rgba(235, 20, 150, 1);
+    color: white;
+  }
+}
+
+.spacer-1, .spacer-2 {
+  border-bottom: 2px solid rgba(235, 20, 150, 1);
+}
+
+.spacer-1 {
+  border-right: 1.5px solid rgba(235, 20, 150, 1);
+}
+
+.spacer-2 {
+  border-left: 1.5px solid rgba(235, 20, 150, 1);
+}
+
+.spacer-3, .spacer-4 {
+  border-bottom: 2px solid rgba(255, 153, 29, 1);
+}
+
+.spacer-3 {
+  border-right: 1.5px solid rgba(255, 153, 29, 1);
+}
+
+.spacer-4 {
+  border-left: 1.5px solid rgba(255, 153, 29, 1);
 }
