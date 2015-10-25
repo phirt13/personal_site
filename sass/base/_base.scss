@@ -15,6 +15,7 @@ body {
 p {
   font-weight: 300;
   letter-spacing: .05em;
+  color: black;
 }
 
 em {
@@ -35,12 +36,12 @@ button {
 input {
   background-color: $creamy-white;
   border: .1em solid $creamy-white;
-  color: $slate-gray;
+  color: $dev-color;
   &:focus {
     outline:none;
     background-color: $creamy-white;
     border: .2em solid $texas-sky-blue;
-    color: $slate-gray;
+    color: $dev-color;
   }
 }
 
@@ -61,7 +62,7 @@ input[type='radio'] {
 }
 
 footer {
-  background-color: $fourB-graphite-gray;
+  background-color: grey;
 
   a {
     text-decoration: none;

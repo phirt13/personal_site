@@ -1,23 +1,26 @@
+// HEADER -------------------------------->>>
+
 header {
   text-align: center;
-  padding: 0em 0 5em 0;
-}
-
-.header-primary {
-  padding: 2em;
-}
-
-.header-secondary {
-  float: left;
-  width: 50%;
-  padding: 1em;
-}
-
-.secondary-headers {
+  padding: 0em 0 0em 0;
   overflow: auto;
-  margin-right: auto;
-  margin-left: auto;
 }
+
+.primary-header {
+  padding: 3em;
+}
+
+.secondary-header, .secondary-header--link-dev, .secondary-header--link-artist  {
+  overflow: auto;
+}
+
+.secondary-header .title-dev, .secondary-header .title-artist {
+    float: left;
+    width: 50%;
+    padding: 1em;
+    text-align: center;
+  }
+
 
 .spacer-1, .spacer-2, .spacer-3, .spacer-4 {
   float: left;
