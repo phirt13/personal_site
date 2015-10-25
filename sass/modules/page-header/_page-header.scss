@@ -1,69 +1,75 @@
-/*----- Footer Module -----*/
-.header-primary {
+.primary-header {
   font-family: 'OpenSans', sans-serif;
   font-size: $default-em * 5;
   text-align: center;
   color: white;
-  background-color: transparent;
-  background-image: linear-gradient(90deg, #eb1496 10%, #ff991d 90%);
+
+  background-image: url('../pics/bw-macro.jpg'), linear-gradient(90deg, $dev-color 10%, $artist-color 90%);;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: multiply;
+
+  transition:background-image 0.5s;
 }
 
-.secondary-headers {
+.secondary-header {
   color: black;
-}
-
-.header-secondary {
-  color: black;
-  font-size: 2em;
   &:visited {
     color: black;
     text-decoration: none;
   }
-
+  .title-dev, .title-artist {
+    font-size: 2em;
+  }
 }
 
-.artist {
+// .secondary-header .title-dev, .secondary-header .title-artist {
+//   font-size: 2em;
+// }
+
+.secondary-header .title-artist {
   background-color: white;
-  border-bottom: 2px solid rgba(255, 153, 29, 1);
-  border-right: 2px solid rgba(255, 153, 29, 1);
+  border-bottom: 2px solid $artist-color;
+  border-right: 2px solid $artist-color;
   transition: background-color .4s linear, color .4s linear, border .4s linear;
   &:hover {
-    background-color: rgba(255, 153, 29, 1);
+    background-color: $artist-color;
     color: white;
   }
 }
 
-.dev {
+.secondary-header .title-dev  {
   background-color: white;
-  border-bottom: 2px solid rgba(235, 20, 150, 1);
-  border-left: 2px solid rgba(235, 20, 150, 1);
+  border-bottom: 2px solid $dev-color;
+  border-left: 2px solid $dev-color;
   transition: background-color .4s linear, color .4s linear, border .4s linear;
   &:hover {
-    background-color: rgba(235, 20, 150, 1);
+    background-color: $dev-color;
     color: white;
   }
 }
 
 .spacer-1, .spacer-2 {
-  border-bottom: 2px solid rgba(235, 20, 150, 1);
+  border-bottom: 2px solid $dev-color;
 }
 
 .spacer-1 {
-  border-right: 1.5px solid rgba(235, 20, 150, 1);
+  border-right: 1.5px solid $dev-color;
 }
 
 .spacer-2 {
-  border-left: 1.5px solid rgba(235, 20, 150, 1);
+  border-left: 1.5px solid $dev-color;
 }
 
 .spacer-3, .spacer-4 {
-  border-bottom: 2px solid rgba(255, 153, 29, 1);
+  border-bottom: 2px solid $artist-color;
 }
 
 .spacer-3 {
-  border-right: 1.5px solid rgba(255, 153, 29, 1);
+  border-right: 1.5px solid $artist-color;
 }
 
 .spacer-4 {
-  border-left: 1.5px solid rgba(255, 153, 29, 1);
+  border-left: 1.5px solid $artist-color;
 }
