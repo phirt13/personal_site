@@ -117,8 +117,7 @@ body {
   max-width: 100%; }
 
 main {
-  overflow: hidden;
-  border: 1px solid black; }
+  overflow: hidden; }
 
 p {
   margin-top: 0.5em; }
@@ -336,6 +335,9 @@ header {
   .grid-12 {
     width: 50%; } }
 
+.contact-section .title {
+  text-align: center; }
+
 .employee-list-cards {
   border-right: 0.1em solid #555755; }
 
@@ -462,6 +464,16 @@ header {
     color: #fff; }
   .icon-github:hover {
     color: #FF9E18; }
+
+.coverpage-paragraph {
+  font-size: 1.5em;
+  padding: 5em 10em;
+  text-align: justify;
+  line-height: 2em; }
+
+.contact-section .title {
+  font-size: 2em;
+  color: black; }
 
 @font-face {
   font-family: 'NotCourierSans';
