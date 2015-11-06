@@ -1,3 +1,7 @@
 .coverpage-icon {
   font-size: 5em;
+  &:hover {
+    color: red;
+    cursor: pointer;
+  }
 }

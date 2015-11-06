@@ -3,4 +3,17 @@
     font-size: 2em;
     color: black;
   }
+  .email, .resume, .linkedin {
+    border: 1px solid white;
+    transition: border .4s linear;
+    &:hover {
+      boder: 1px solid black;
+    }
+
+  }
+  .email {
+    &:hover {
+      border: 1px solid black;
+    }
+  }
 }
