@@ -56,7 +56,6 @@ body {
   font-weight: 200;
   font-size: 1em;
   letter-spacing: .05em;
-  color: #FFFCEE;
   background-color: white;
   border: 0.8em solid #e7e7e8; }
 
@@ -371,8 +370,20 @@ header {
   font-size: 2em;
   color: black; }
 
+.contact .email, .contact .resume, .contact .linkedin {
+  border: 1px solid white;
+  transition: border 0.4s linear; }
+  .contact .email:hover, .contact .resume:hover, .contact .linkedin:hover {
+    boder: 1px solid black; }
+
+.contact .email:hover {
+  border: 1px solid black; }
+
 .coverpage-icon {
   font-size: 5em; }
+  .coverpage-icon:hover {
+    color: red;
+    cursor: pointer; }
 
 @font-face {
   font-family: 'NotCourierSans';
