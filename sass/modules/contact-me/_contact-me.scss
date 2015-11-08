@@ -1,19 +1,28 @@
 .contact {
   .title {
+    font-family: $headers;
     font-size: 2em;
-    color: black;
+    color: $dark-graphite-gray;
   }
-  .email, .resume, .linkedin {
-    border: 1px solid white;
-    transition: border .4s linear;
-    &:hover {
-      boder: 1px solid black;
-    }
+  .contact-header {
+    font-size: 1.5em;
+    transition: all .4s linear;
+  }
 
-  }
-  .email {
+  .email, .resume, .linkedin {
+    border-top: 1px solid transparent;
+    transition: all .4s linear;
     &:hover {
-      border: 1px solid black;
+      border-top: 1px solid $dark-graphite-gray;
+      cursor: pointer;
+    }
+    &:hover .coverpage-icon {
+      color: $dark-graphite-gray;
+      transform: scale(1.2);
+    }
+    &:hover .contact-header{
+      transform: scale(1.1);
     }
   }
 }
+

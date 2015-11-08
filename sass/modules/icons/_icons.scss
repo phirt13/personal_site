@@ -1,7 +1,5 @@
 .coverpage-icon {
+  color: $light-graphite-gray;
   font-size: 5em;
-  &:hover {
-    color: red;
-    cursor: pointer;
-  }
+  transition: all .4s linear;
 }

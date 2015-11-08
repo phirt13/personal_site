@@ -1,6 +1,11 @@
-.coverpage-paragraph {
+.coverpage-paragraph-section {
   font-size: 1.5em;
   padding: 5em 7em;
   text-align: justify;
   line-height: 2em;
+}
+
+.coverpage-paragraph-text {
+  font-family: $main-body;
+  font-weight: 100;
 }
