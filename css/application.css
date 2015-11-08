@@ -52,17 +52,17 @@ html {
   background-color: white; }
 
 body {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 200;
+  font-family: "Lato", sans-serif;
+  font-weight: 100;
   font-size: 1em;
   letter-spacing: .05em;
   background-color: white;
+  color: #262626;
   border: 0.8em solid #e7e7e8; }
 
 p {
   font-weight: 300;
-  letter-spacing: .05em;
-  color: black; }
+  letter-spacing: .05em; }
 
 em {
   font-weight: 600;
@@ -79,12 +79,12 @@ button {
 input {
   background-color: #FFFCEE;
   border: 0.1em solid #FFFCEE;
-  color: #fda039; }
+  color: #fea900; }
   input:focus {
     outline: none;
     background-color: #FFFCEE;
     border: 0.2em solid #3385FF;
-    color: #fda039; }
+    color: #fea900; }
 
 input[type='radio'] {
   -webkit-appearance: none;
@@ -98,6 +98,12 @@ input[type='radio'] {
     background-color: #3385FF; }
   input[type='radio']:focus {
     outline: none; }
+
+a {
+  text-decoration: none;
+  color: #262626; }
+  a:visited {
+    color: #262626; }
 
 footer {
   background-color: grey; }
@@ -143,7 +149,7 @@ header {
   overflow: auto; }
 
 .primary-header {
-  padding: 3em; }
+  padding: 12em; }
 
 .secondary-header, .secondary-header--link-dev, .secondary-header--link-artist {
   overflow: auto; }
@@ -281,28 +287,35 @@ header {
 .contact {
   overflow: auto;
   text-align: center;
-  padding: 2em; }
+  padding: 2em;
+  margin-top: 1em; }
   .contact .title {
-    text-align: center;
-    margin-bottom: 1em; }
+    text-align: center; }
   .contact .email, .contact .resume, .contact .linkedin {
     float: left;
-    width: 33.33333%; }
+    width: 33%; }
+  .contact .email {
+    margin-right: 0.499995%;
+    margin-left: 0.499995%; }
 
 .coverpage-icon {
-  display: inline-block; }
+  display: inline-block;
+  margin-bottom: .5em; }
 
 .primary-header {
-  font-family: 'OpenSans', sans-serif;
-  font-size: 5em;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 200;
   text-align: center;
   color: white;
-  background-image: url("../pics/bw-macro.jpg"), linear-gradient(90deg, #fda039 10%, #83d6ff 90%);
+  background-image: url("../pics/bw-macro.jpg"), linear-gradient(90deg, #fea900 10%, #4fdfbb 90%);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   background-blend-mode: multiply;
   transition: background-image 0.5s; }
+
+.primary-header--title {
+  font-size: 8em; }
 
 .secondary-header {
   color: black; }
@@ -314,39 +327,39 @@ header {
 
 .secondary-header .title-artist {
   background-color: white;
-  border-bottom: 2px solid #83d6ff;
-  border-right: 2px solid #83d6ff;
+  border-bottom: 2px solid #4fdfbb;
+  border-right: 2px solid #4fdfbb;
   transition: background-color 0.4s linear, color 0.4s linear, border 0.4s linear; }
   .secondary-header .title-artist:hover {
-    background-color: #83d6ff;
+    background-color: #4fdfbb;
     color: white; }
 
 .secondary-header .title-dev {
   background-color: white;
-  border-bottom: 2px solid #fda039;
-  border-left: 2px solid #fda039;
+  border-bottom: 2px solid #fea900;
+  border-left: 2px solid #fea900;
   transition: background-color 0.4s linear, color 0.4s linear, border 0.4s linear; }
   .secondary-header .title-dev:hover {
-    background-color: #fda039;
+    background-color: #fea900;
     color: white; }
 
 .spacer-1, .spacer-2 {
-  border-bottom: 2px solid #fda039; }
+  border-bottom: 2px solid #fea900; }
 
 .spacer-1 {
-  border-right: 1.5px solid #fda039; }
+  border-right: 1.5px solid #fea900; }
 
 .spacer-2 {
-  border-left: 1.5px solid #fda039; }
+  border-left: 1.5px solid #fea900; }
 
 .spacer-3, .spacer-4 {
-  border-bottom: 2px solid #83d6ff; }
+  border-bottom: 2px solid #4fdfbb; }
 
 .spacer-3 {
-  border-right: 1.5px solid #83d6ff; }
+  border-right: 1.5px solid #4fdfbb; }
 
 .spacer-4 {
-  border-left: 1.5px solid #83d6ff; }
+  border-left: 1.5px solid #4fdfbb; }
 
 /*----- Footer Module -----*/
 .icon-github {
@@ -360,38 +373,89 @@ header {
   .icon-github:hover {
     color: #FF9E18; }
 
-.coverpage-paragraph {
+.coverpage-paragraph-section {
   font-size: 1.5em;
   padding: 5em 7em;
   text-align: justify;
   line-height: 2em; }
 
+.coverpage-paragraph-text {
+  font-family: "Lato", sans-serif;
+  font-weight: 100; }
+
 .contact .title {
+  font-family: "Quicksand", sans-serif;
   font-size: 2em;
-  color: black; }
+  color: #262626; }
+
+.contact .contact-header {
+  font-size: 1.5em;
+  transition: all 0.4s linear; }
 
 .contact .email, .contact .resume, .contact .linkedin {
-  border: 1px solid white;
-  transition: border 0.4s linear; }
+  border-top: 1px solid transparent;
+  transition: all 0.4s linear; }
   .contact .email:hover, .contact .resume:hover, .contact .linkedin:hover {
-    boder: 1px solid black; }
-
-.contact .email:hover {
-  border: 1px solid black; }
+    border-top: 1px solid #262626;
+    cursor: pointer; }
+  .contact .email:hover .coverpage-icon, .contact .resume:hover .coverpage-icon, .contact .linkedin:hover .coverpage-icon {
+    color: #262626;
+    transform: scale(1.2); }
+  .contact .email:hover .contact-header, .contact .resume:hover .contact-header, .contact .linkedin:hover .contact-header {
+    transform: scale(1.1); }
 
 .coverpage-icon {
-  font-size: 5em; }
-  .coverpage-icon:hover {
-    color: red;
-    cursor: pointer; }
+  color: #727272;
+  font-size: 5em;
+  transition: all 0.4s linear; }
 
 @font-face {
-  font-family: 'NotCourierSans';
-  src: url("../fonts/NotCourierSans.otf"); }
+  font-family: 'Quicksand';
+  src: url("../fonts/quicksand/Quicksand-Light.otf") format("truetype");
+  font-weight: 100;
+  font-style: normal; }
 
 @font-face {
-  font-family: 'NotCourierSans-Bold';
-  src: url("../fonts/NotCourierSans-Bold.otf"); }
+  font-family: 'Quicksand';
+  src: url("../fonts/quicksand/Quicksand-Regular.otf") format("truetype");
+  font-weight: 200;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Quicksand';
+  src: url("../fonts/quicksand/Quicksand-Bold.otf") format("truetype");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Lato';
+  src: url("../fonts/lato/Lato-Hairline.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Lato';
+  src: url("../fonts/lato/Lato-Light.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Lato';
+  src: url("../fonts/lato/Lato-Medium.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Lato';
+  src: url("../fonts/lato/Lato-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Lato';
+  src: url("../fonts/lato/Lato-Hairline.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal; }
 
 @font-face {
   font-family: 'Open Sans';

@@ -1,6 +1,6 @@
 .primary-header {
-  font-family: 'OpenSans', sans-serif;
-  font-size: $default-em * 5;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 200;
   text-align: center;
   color: white;
 
@@ -13,6 +13,9 @@
   transition:background-image 0.5s;
 }
 
+.primary-header--title {
+  font-size: 8em;
+}
 .secondary-header {
   color: black;
   &:visited {
