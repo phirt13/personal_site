@@ -1,5 +1,5 @@
 .primary-header {
-  font-family: 'Quicksand', sans-serif;
+  font-family: $header-font;
   font-weight: 200;
   text-align: center;
   color: white;
@@ -17,9 +17,9 @@
   font-size: 8em;
 }
 .secondary-header {
-  color: black;
+  color: $dark-graphite-gray;
   &:visited {
-    color: black;
+    color: $dark-graphite-gray;
     text-decoration: none;
   }
   .title-dev, .title-artist {
@@ -75,4 +75,12 @@
 
 .spacer-4 {
   border-left: 1.5px solid $artist-color;
+}
+
+.spacer-5 {
+  border-bottom: 2px solid $dev-color;
+}
+
+.spacer-6 {
+  border-bottom: 2px solid $artist-color;
 }

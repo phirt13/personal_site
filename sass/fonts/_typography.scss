@@ -1,4 +1,5 @@
 //HEADERS
+// ----------------------------------------- >>>
 
 ////Quicksand
 
@@ -25,6 +26,7 @@
 
 
 //BODY-MAIN
+// ----------------------------------------- >>>
 
 ////Lato
 
@@ -58,59 +60,11 @@
 
 @font-face {
     font-family: 'Lato';
-    src: url('../fonts/lato/Lato-Hairline.ttf') format('truetype');
-    font-weight: 100;
+    src: url('../fonts/lato/Lato-Semibold.ttf') format('truetype');
+    font-weight: 500;
     font-style: normal;
 }
 
-// @font-face {
-//     font-family: 'Lato';
-//     src: url('../fonts/lato/') format('truetype');
-//     font-weight: 200;
-//     font-style: normal;
-// }
-
-// @font-face {
-//     font-family: 'Lato';
-//     src: url('../fonts/lato/') format('truetype');
-//     font-weight: 300;
-//     font-style: normal;
-// }
-
-// @font-face {
-//     font-family: 'Lato';
-//     src: url('../fonts/lato/') format('truetype');
-//     font-weight: 400;
-//     font-style: normal;
-// }
-
-// @font-face {
-//     font-family: 'Lato';
-//     src: url('../fonts/lato/') format('truetype');
-//     font-weight: 500;
-//     font-style: normal;
-// }
-
-// @font-face {
-//     font-family: 'Lato';
-//     src: url('../fonts/lato/') format('truetype');
-//     font-weight: 600;
-//     font-style: normal;
-// }
-
-// @font-face {
-//     font-family: 'Lato';
-//     src: url('../fonts/lato/') format('truetype');
-//     font-weight: 700;
-//     font-style: normal;
-// }
-
-// @font-face {
-//     font-family: 'Lato';
-//     src: url('../fonts/lato/') format('truetype');
-//     font-weight: 800;
-//     font-style: normal;
-// }
 //Open-sans
 
 @font-face {
@@ -119,24 +73,28 @@
      font-weight: 400;
      font-style: normal;
 }
+
 @font-face {
      font-family: 'Open Sans';
      src: url('../fonts/open-sans/OpenSans-Light.ttf') format('truetype');
      font-weight: 300;
      font-style: normal;
 }
+
 @font-face {
      font-family: 'Open Sans';
      src: url('../fonts/open-sans/OpenSans-Semibold.ttf') format('truetype');
      font-weight: 500;
      font-style: normal;
 }
+
 @font-face {
      font-family: 'Open Sans';
      src: url('../fonts/open-sans/OpenSans-Bold.ttf') format('truetype');
      font-weight: 600;
      font-style: normal;
 }
+
 @font-face {
      font-family: 'Open Sans';
      src: url('../fonts/open-sans/OpenSans-ExtraBold.ttf') format('truetype');
