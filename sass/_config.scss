@@ -1,11 +1,12 @@
 // BASE AND MODULE VARIABLES
-// ---------------------------------------------
+// --------------------------------------------- >>>
 
 // Colors
-$dev-color: #fea900 !default;
-$artist-color: #4fdfbb !default;
-$dark-graphite-gray: #262626 !default;
-$light-graphite-gray: #727272 !default;
+// -------------------------------
+$dev-color: #fea900 !default;  //macaw orange
+$artist-color: #4fdfbb !default; //macaw blue
+$dark-graphite-gray: #262626 !default; //dark gray
+$light-graphite-gray: #727272 !default; //light gray
 $tan: #D9CB9E !default;
 $blood-orange: #DC3522 !default;
 $burnt-orange: #DC591D !default;
@@ -14,14 +15,15 @@ $texas-sky-blue: #3385FF !default;
 $creamy-white: #FFFCEE !default;
 
 //Font
-$headers: 'Quicksand', sans-serif;
-$main-body: 'Lato', sans-serif;
+// -------------------------------
+$header-font: 'Quicksand', sans-serif;
+$main-body-font: 'Lato', sans-serif;
 
 // Em Spacing
 $default-em: 1em !default;
 
 // LEMONADE GRID VARIABLES
-// ---------------------------------------------
+// --------------------------------------------- >>>
 
 // Helpers
 $full:            100%;
