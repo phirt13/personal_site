@@ -3,31 +3,90 @@
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-    <title>Alex Hirt | Visual Artist</title>
+    <title>Alex Hirt | Front-End Developer | Visual Artist</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- CSS
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/layout.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/state.css">
-
+    <link rel="stylesheet" href="css/application.css">
   </head>
 
 <!-- CONTENT
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <body>
 
-    <header role="banner">
-      <h1>Arts Page</h1>
+    <header class="arts-header" role="banner">
+      <h1 class="arts-header--title"><a href="coverpage.html">Alex Hirt</a></h1>
+      <nav class="arts-navbar"/>
+        <ul>
+          <li>
+            <a class="arts-navbar--link" href="Installation">Sketch Book</a>
+          </li>
+          <li>
+            <a class="arts-navbar--link" href="Installation">Drawing</a>
+          </li>
+          <li>
+            <a class="arts-navbar--link" href="Installation">Sculpture</a>
+          </li>
+          <li>
+            <a class="arts-navbar--link" href="Installation">Installation</a>
+          </li>
+        </ul>
+      </nav>
     </header>
 
-    <main role="main">
+    <main class="arts-main" role="main">
+      <section class="arts-hero">
+        <h2 class="arts-hero--title">About My Work</h2>
+        <p class="arts-hero--text">Hello! My name is Alex Hirt and I love to create.  I have a bachelors from the University of Washington in Sculpture and training is Front-End Web Development from Codefellows.  My passion for creativity defines and drives my pursuit of excellence.</p>
+      </section>
+
+      <section class="arts-gallery">
+        <h2 class="arts-gallery--medium-title">Installation</h2>
+        <hr class="arts-gallery--title-break">
+        <section class="arts-gallery--piece">
+          <img class="arts-gallery--piece-image" src="pics/Installation-2.jpeg">
+          <section class="arts-gallery--piece-text">
+            <h3 class="arts-gallery--piece-title">Oros</h3>
+            <h4 class="arts-gallery--piece-date">December 2015</h4>
+            <p class="arts-gallery--piece-description">Hello! My name is Alex Hirt and I love to create.  I have a bachelors from the University of Washington in Sculpture and training is Front-End Web Development from Codefellows.  My passion for creativity defines and drives my pursuit of excellence.</p>
+          </section>
+        </section>
+        <section class="arts-gallery--piece">
+          <img class="arts-gallery--piece-image" src="pics/Installation-1.jpg">
+          <section class="arts-gallery--piece-text">
+            <h3 class="arts-gallery--piece-title">Oros</h3>
+            <h4 class="arts-gallery--piece-date">December 2015</h4>
+            <p class="arts-gallery--piece-description">Hello! My name is Alex Hirt and I love to create.  I have a bachelors from the University of Washington in Sculpture and training is Front-End Web Development from Codefellows.  My passion for creativity defines and drives my pursuit of excellence.</p>
+          </section>
+        </section>
+      </section>
+
+      <section class="arts-gallery">
+        <h2 class="arts-gallery--medium-title">Sculpture</h2>
+        <hr class="arts-gallery--title-break">
+        <section class="arts-gallery--piece">
+          <img class="arts-gallery--piece-image" src="pics/Installation-2.jpeg">
+          <section class="arts-gallery--piece-text">
+            <h3 class="arts-gallery--piece-title">Oros</h3>
+            <h4 class="arts-gallery--piece-date">December 2015</h4>
+            <p class="arts-gallery--piece-description">Hello! My name is Alex Hirt and I love to create.  I have a bachelors from the University of Washington in Sculpture and training is Front-End Web Development from Codefellows.  My passion for creativity defines and drives my pursuit of excellence.</p>
+          </section>
+        </section>
+        <section class="arts-gallery--piece">
+          <img class="arts-gallery--piece-image" src="pics/Installation-1.jpg">
+          <section class="arts-gallery--piece-text">
+            <h3 class="arts-gallery--piece-title">Oros</h3>
+            <h4 class="arts-gallery--piece-date">December 2015</h4>
+            <p class="arts-gallery--piece-description">Hello! My name is Alex Hirt and I love to create.  I have a bachelors from the University of Washington in Sculpture and training is Front-End Web Development from Codefellows.  My passion for creativity defines and drives my pursuit of excellence.</p>
+          </section>
+        </section>
+      </section>
     </main>
 
     <footer role="contentinfo">
+      <p class="footer-copywright">Copyright Alex Hirt 2015. All rights rserved.</p>
     </footer>
 
   </body>

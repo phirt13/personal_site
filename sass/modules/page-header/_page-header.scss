@@ -32,6 +32,8 @@
 // }
 
 .secondary-header .title-artist {
+  font-family: $header-font;
+  font-weight: 200;
   background-color: white;
   border-bottom: 2px solid $artist-color;
   border-right: 2px solid $artist-color;
@@ -43,6 +45,8 @@
 }
 
 .secondary-header .title-dev  {
+  font-family: $header-font;
+  font-weight: 200;
   background-color: white;
   border-bottom: 2px solid $dev-color;
   border-left: 2px solid $dev-color;
@@ -84,3 +88,5 @@
 .spacer-6 {
   border-bottom: 2px solid $artist-color;
 }
+
+

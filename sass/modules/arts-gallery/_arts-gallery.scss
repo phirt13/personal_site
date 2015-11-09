@@ -1,0 +1,32 @@
+.arts-gallery {
+  background-color: white;
+}
+
+.arts-gallery--medium-title {
+  font-family: $header-font;
+  font-weight: 200;
+  font-size: 2em;
+}
+
+.arts-gallery--title-break {
+  border: 1px solid $light-macaw-blue;
+}
+
+.arts-gallery--piece-image {
+  background-color: white;
+}
+
+.arts-gallery--piece-title {
+  font-size: 1.5em;
+  font-weight: 200;
+}
+
+.arts-gallery--piece-date {
+  font-size: 1em;
+}
+
+.arts-gallery--piece-description {
+  font-size: 1.1em;
+  text-aligh: justify;
+  line-height: 1.5em;
+}

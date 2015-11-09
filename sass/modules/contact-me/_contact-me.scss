@@ -2,6 +2,7 @@
   .title {
     font-family: $header-font;
     font-size: 2em;
+    font-weight: 200;
     color: $dark-graphite-gray;
   }
   .contact-header {
@@ -9,7 +10,7 @@
     transition: all .4s linear;
   }
 
-  .email, .resume, .linkedin {
+  .contact-email, .contact-resume, .contact-linkedin {
     border-top: 1px solid transparent;
     transition: all .4s linear;
     &:hover {
