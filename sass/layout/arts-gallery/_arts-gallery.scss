@@ -1,0 +1,44 @@
+.arts-gallery {
+  overflow: auto;
+  padding: 2.5em 2.5em 5em 2.5em;
+}
+
+.arts-gallery--medium-title {
+  display: block;
+  text-align: center;
+  width: 90%;
+  margin: 0 auto;
+  padding: 0em 0em .5em 0;
+}
+
+.arts-gallery--title-break {
+  width: 40%;
+  display: block;
+  margin: 0 auto;
+}
+
+.arts-gallery--piece {
+  overflow: auto;
+}
+
+.arts-gallery--piece-image {
+  float: left;
+  width: 50%;
+  padding: 2.5em;
+}
+
+.arts-gallery--piece-text {
+  float: left;
+  width: 50%;
+  padding: 2.5em;
+}
+
+.arts-gallery--piece-date {
+  margin-top: .5em;
+}
+
+.arts-gallery--piece-description {
+  text-aligh: justify;
+  line-height: 1.5em;
+  padding: 1em 0;
+}

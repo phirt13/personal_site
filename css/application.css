@@ -54,11 +54,11 @@ body {
   font-size: 1em;
   letter-spacing: .05em;
   background-color: white;
-  color: #262626;
+  color: #303030;
   border: 0.8em solid #e7e7e8; }
 
 p {
-  color: #262626;
+  color: #303030;
   letter-spacing: .05em; }
 
 em {
@@ -66,9 +66,9 @@ em {
 
 a {
   text-decoration: none;
-  color: #262626; }
+  color: #303030; }
   a:visited {
-    color: #262626; }
+    color: #303030; }
 
 footer {
   background-color: grey; }
@@ -81,9 +81,10 @@ body {
   width: 100%;
   max-width: 100%; }
 
-main {
+.coverpage-main {
   width: 90%;
-  margin: 0 auto; }
+  margin: 0 auto;
+  overflow: auto; }
 
 p {
   margin-top: 0.5em; }
@@ -101,7 +102,7 @@ label {
   margin-top: 1em; }
 
 footer {
-  padding: 2em; }
+  padding: 5em; }
 
 header {
   text-align: center;
@@ -125,9 +126,17 @@ header {
   width: 25%;
   height: 5em; }
 
+.spacer-section--two {
+  overflow: auto; }
+
 .spacer-5, .spacer-6 {
   float: left;
   width: 50%; }
+
+.footer-copywright {
+  font-size: .9em;
+  font-weight: 100;
+  color: white; }
 
 * {
   margin: 0;
@@ -251,15 +260,15 @@ header {
 .contact {
   overflow: auto;
   text-align: center;
-  padding: 2em;
-  margin: 1em 0; }
+  padding: 5em 2em; }
   .contact .title {
     text-align: center;
-    margin-bottom: .5em; }
-  .contact .email, .contact .resume, .contact .linkedin {
+    margin-bottom: 1em; }
+  .contact .contact-email, .contact .contact-resume, .contact .contact-linkedin {
     float: left;
-    width: 33%; }
-  .contact .email {
+    width: 33%;
+    padding: 2.5em 1em 2.5em 1em; }
+  .contact .contact-email {
     margin-right: 0.499995%;
     margin-left: 0.499995%; }
 
@@ -267,9 +276,106 @@ header {
   position: absolute;
   z-index: -201; }
 
+.coverpage-paragraph--section {
+  padding: 5em 7em; }
+
+.coverpage-paragraph--text {
+  text-align: justify;
+  line-height: 2em; }
+
+.arts-header {
+  text-align: left;
+  padding: 7em 0em 0em 0em; }
+
+.arts-header--title {
+  margin-left: .25em; }
+
+.arts-navbar {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0px;
+  overflow: auto;
+  padding: 0 0.5em 0em 0; }
+
+.arts-navbar--link {
+  float: right;
+  padding: 0.5em 0.5em 0.25em 0.5em; }
+
+.arts-hero {
+  padding: 10em 10em 10em 10em; }
+
+.arts-hero--title {
+  text-align: center;
+  margin-bottom: 1em; }
+
+.arts-gallery {
+  overflow: auto;
+  padding: 2.5em 2.5em 5em 2.5em; }
+
+.arts-gallery--medium-title {
+  display: block;
+  text-align: center;
+  width: 90%;
+  margin: 0 auto;
+  padding: 0em 0em 0.5em 0; }
+
+.arts-gallery--title-break {
+  width: 40%;
+  display: block;
+  margin: 0 auto; }
+
+.arts-gallery--piece {
+  overflow: auto; }
+
+.arts-gallery--piece-image {
+  float: left;
+  width: 50%;
+  padding: 2.5em; }
+
+.arts-gallery--piece-text {
+  float: left;
+  width: 50%;
+  padding: 2.5em; }
+
+.arts-gallery--piece-date {
+  margin-top: .5em; }
+
+.arts-gallery--piece-description {
+  text-aligh: justify;
+  line-height: 1.5em;
+  padding: 1em 0; }
+
 .coverpage-icon {
   display: inline-block;
   margin-bottom: .5em; }
+
+body {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 100%; }
+
+.coverpage-main {
+  width: 90%;
+  margin: 0 auto;
+  overflow: auto; }
+
+p {
+  margin-top: 0.5em; }
+
+button {
+  display: block;
+  padding: 0.5em; }
+
+input {
+  box-sizing: border-box;
+  padding: .5em;
+  margin-top: 1em; }
+
+label {
+  margin-top: 1em; }
+
+footer {
+  padding: 5em; }
 
 .primary-header {
   font-family: "Quicksand", sans-serif;
@@ -287,14 +393,16 @@ header {
   font-size: 8em; }
 
 .secondary-header {
-  color: #262626; }
+  color: #303030; }
   .secondary-header:visited {
-    color: #262626;
+    color: #303030;
     text-decoration: none; }
   .secondary-header .title-dev, .secondary-header .title-artist {
     font-size: 2em; }
 
 .secondary-header .title-artist {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 200;
   background-color: white;
   border-bottom: 2px solid #4fdfbb;
   border-right: 2px solid #4fdfbb;
@@ -304,6 +412,8 @@ header {
     color: white; }
 
 .secondary-header .title-dev {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 200;
   background-color: white;
   border-bottom: 2px solid #fea900;
   border-left: 2px solid #fea900;
@@ -348,39 +458,96 @@ header {
   .icon-github:hover {
     color: #FF9E18; }
 
-.coverpage-paragraph-section {
-  font-size: 1.5em;
-  padding: 5em 7em;
-  text-align: justify;
-  line-height: 2em; }
-
-.coverpage-paragraph-text {
+.coverpage-paragraph--text {
   font-family: "Lato", sans-serif;
-  font-weight: 100; }
+  font-weight: 100;
+  font-size: 1.5em; }
 
 .contact .title {
   font-family: "Quicksand", sans-serif;
   font-size: 2em;
-  color: #262626; }
+  font-weight: 200;
+  color: #303030; }
 
 .contact .contact-header {
   font-size: 1.5em;
   transition: all 0.4s linear; }
 
-.contact .email, .contact .resume, .contact .linkedin {
+.contact .contact-email, .contact .contact-resume, .contact .contact-linkedin {
   border-top: 1px solid transparent;
   transition: all 0.4s linear; }
-  .contact .email:hover, .contact .resume:hover, .contact .linkedin:hover {
-    border-top: 1px solid #262626;
+  .contact .contact-email:hover, .contact .contact-resume:hover, .contact .contact-linkedin:hover {
+    border-top: 1px solid #303030;
     cursor: pointer; }
-  .contact .email:hover .coverpage-icon, .contact .resume:hover .coverpage-icon, .contact .linkedin:hover .coverpage-icon {
-    color: #262626;
+  .contact .contact-email:hover .coverpage-icon, .contact .contact-resume:hover .coverpage-icon, .contact .contact-linkedin:hover .coverpage-icon {
+    color: #303030;
     transform: scale(1.2); }
-  .contact .email:hover .contact-header, .contact .resume:hover .contact-header, .contact .linkedin:hover .contact-header {
+  .contact .contact-email:hover .contact-header, .contact .contact-resume:hover .contact-header, .contact .contact-linkedin:hover .contact-header {
     transform: scale(1.1); }
 
+.arts-header {
+  background-color: #4fdfbb;
+  background-image: url("../pics/cropped-bw.jpg"), linear-gradient(90deg, #4fdfbb 10%, #4fdfbb 90%);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: multiply; }
+
+.arts-header--title {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 200;
+  font-size: 3em;
+  color: white; }
+  .arts-header--title a {
+    color: white; }
+
+.arts-navbar {
+  background-color: white; }
+
+.arts-navbar--link {
+  font-size: 1.75em;
+  border-bottom: 3px solid transparent; }
+  .arts-navbar--link:hover {
+    border-bottom: 3px solid #2bffad; }
+
+.arts-hero--text {
+  font-size: 1.5em;
+  text-align: justify;
+  line-height: 2em; }
+
+.arts-hero--title {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 200;
+  font-size: 2em; }
+
+.arts-gallery {
+  background-color: white; }
+
+.arts-gallery--medium-title {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 200;
+  font-size: 2em; }
+
+.arts-gallery--title-break {
+  border: 1px solid #2bffad; }
+
+.arts-gallery--piece-image {
+  background-color: white; }
+
+.arts-gallery--piece-title {
+  font-size: 1.5em;
+  font-weight: 200; }
+
+.arts-gallery--piece-date {
+  font-size: 1em; }
+
+.arts-gallery--piece-description {
+  font-size: 1.1em;
+  text-aligh: justify;
+  line-height: 1.5em; }
+
 .coverpage-icon {
-  color: #727272;
+  color: #bdbdbd;
   font-size: 5em;
   transition: all 0.4s linear; }
 

@@ -4,9 +4,14 @@ body {
   max-width: 100%;
 }
 
-main {
+.coverpage-main {
   width: 90%;
   margin: 0 auto;
+  overflow: auto;
+}
+
+.arts-main {
+  // overflow: auto;
 }
 
 p {
@@ -29,5 +34,5 @@ label {
 }
 
 footer {
-  padding: $default-em * 2;
+  padding: 5em;
 }
