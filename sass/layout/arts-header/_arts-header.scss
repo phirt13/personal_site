@@ -4,5 +4,22 @@
 }
 
 .arts-header--title {
-  margin-left: .25em;
+  padding-left: .5em;
+  width: 30%;
+}
+
+.oh-speech-bubble {
+  position: absolute;
+  padding: 1em;
+  left: 240px;
+  top: 70px;
+  z-index: -10;
+}
+
+.oh-speech-bubble--active {
+  position: absolute;
+  padding: 1em;
+  left: 240px;
+  top: 70px;
+  z-index: 10;
 }

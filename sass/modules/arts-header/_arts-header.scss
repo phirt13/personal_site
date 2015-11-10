@@ -12,7 +12,88 @@
   font-weight: 200;
   font-size: 3em;
   color: white;
+  transition: all .4s linear;
   a {
     color: white;
+    &:hover {
+      display:block;
+      animation: shake 1s linear;
+      -webkit-animation: shake 0.2s linear;
+    }
+  }
+  &:hover {
+    transform: translateY(10px);
   }
 }
+
+.oh-speech-bubble--active {
+  background-color: white;
+  border: 3px solid black;
+  border-radius: 30px;
+
+}
+
+.oh-speech-bubble--text {
+  font-weight: 300;
+}
+
+@keyframes shake {
+  0% {
+    transform: translateX(1px);
+  }
+
+  12.5% {
+    transform: translateX(-1px);
+  }
+
+  25% {
+    transform: translateX(1px);
+  }
+
+  37.5% {
+    transform: translateX(-1px);
+  }
+
+  50% {
+    transform: translateX(1px);
+  }
+
+  62.5% {
+    transform: translateX(-1px);
+  }
+
+
+  75% {
+    transform: translateX(1px);
+  }
+
+
+  87.5% {
+    transform: translateX(-1px);
+  }
+
+  100% {
+    transform: translateX(1px);
+  }
+}
+
+
+// @keyframes fadeIn {
+//   0% {
+//     opacity: 0.0;
+//   }
+
+//   100% {
+//     opacity: 1;
+//   }
+// }
+
+// @-webkit-keyframes fadeIn {
+//   0% {
+//     opacity: 0.0;
+//   }
+
+//   100% {
+//     opacity: 1;
+//   }
+// }

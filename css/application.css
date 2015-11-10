@@ -288,7 +288,22 @@ header {
   padding: 7em 0em 0em 0em; }
 
 .arts-header--title {
-  margin-left: .25em; }
+  padding-left: .5em;
+  width: 30%; }
+
+.oh-speech-bubble {
+  position: absolute;
+  padding: 1em;
+  left: 240px;
+  top: 70px;
+  z-index: -10; }
+
+.oh-speech-bubble--active {
+  position: absolute;
+  padding: 1em;
+  left: 240px;
+  top: 70px;
+  z-index: 10; }
 
 .arts-navbar {
   position: sticky;
@@ -317,7 +332,7 @@ header {
   text-align: center;
   width: 90%;
   margin: 0 auto;
-  padding: 0em 0em 0.5em 0; }
+  padding: 0.5em 0em 0.5em 0; }
 
 .arts-gallery--title-break {
   width: 40%;
@@ -344,6 +359,54 @@ header {
   text-aligh: justify;
   line-height: 1.5em;
   padding: 1em 0; }
+
+.view-more-section {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  overflow: auto;
+  width: 40%; }
+  .view-more-section:hover .arts-gallery--icon {
+    transform: translateX(10px);
+    z-index: 0; }
+  .view-more-section:hover .arts-gallery--view {
+    color: black; }
+
+.view-bar {
+  display: block;
+  margin: 0 auto;
+  border: 1px solid #fea900; }
+
+.arts-gallery--icon {
+  margin-left: 0;
+  transition: all 0.4s linear; }
+
+.arts-gallery--view, .arts-gallery--icon {
+  display: inline-block; }
+
+.arts-gallery--view {
+  padding: .5em;
+  background-color: white;
+  transition: all 1s linear;
+  z-index: 0; }
+
+.arts-gallery--icon {
+  position: absolute;
+  margin-top: 1em;
+  transform: translateX(-60px);
+  z-index: -2; }
+
+@keyframes bounceArrow {
+  0% {
+    transform: translateX(0px); }
+  25% {
+    transform: translateX(6px); }
+  50% {
+    transform: translateX(0px); }
+  75% {
+    transform: translateX(6px); }
+  100% {
+    transform: translateX(0px); } }
 
 .coverpage-icon {
   display: inline-block;
@@ -497,16 +560,52 @@ footer {
   font-family: "Quicksand", sans-serif;
   font-weight: 200;
   font-size: 3em;
-  color: white; }
+  color: white;
+  transition: all 0.4s linear; }
   .arts-header--title a {
     color: white; }
+    .arts-header--title a:hover {
+      display: block;
+      animation: shake 1s linear;
+      -webkit-animation: shake 0.2s linear; }
+  .arts-header--title:hover {
+    transform: translateY(10px); }
+
+.oh-speech-bubble--active {
+  background-color: white;
+  border: 3px solid black;
+  border-radius: 30px; }
+
+.oh-speech-bubble--text {
+  font-weight: 300; }
+
+@keyframes shake {
+  0% {
+    transform: translateX(1px); }
+  12.5% {
+    transform: translateX(-1px); }
+  25% {
+    transform: translateX(1px); }
+  37.5% {
+    transform: translateX(-1px); }
+  50% {
+    transform: translateX(1px); }
+  62.5% {
+    transform: translateX(-1px); }
+  75% {
+    transform: translateX(1px); }
+  87.5% {
+    transform: translateX(-1px); }
+  100% {
+    transform: translateX(1px); } }
 
 .arts-navbar {
   background-color: white; }
 
 .arts-navbar--link {
   font-size: 1.75em;
-  border-bottom: 3px solid transparent; }
+  border-bottom: 3px solid transparent;
+  transition: all 0.4s linear; }
   .arts-navbar--link:hover {
     border-bottom: 3px solid #2bffad; }
 
@@ -529,7 +628,8 @@ footer {
   font-size: 2em; }
 
 .arts-gallery--title-break {
-  border: 1px solid #2bffad; }
+  border: 1px solid #2bffad;
+  border-radius: 50px; }
 
 .arts-gallery--piece-image {
   background-color: white; }
@@ -545,6 +645,23 @@ footer {
   font-size: 1.1em;
   text-aligh: justify;
   line-height: 1.5em; }
+
+.arts-gallery--view {
+  font-size: 2em; }
+
+.arts-gallery--icon {
+  color: black; }
+
+.lnr-chevron-right-circle {
+  color: #fea900;
+  font-size: 2em;
+  transition: all 0.4s linear; }
+
+.arts-gallery--view {
+  font-weight: 200; }
+
+.arts-gallery--pagebreak {
+  border: 7px solid #e7e7e8; }
 
 .coverpage-icon {
   color: #bdbdbd;
@@ -631,8 +748,8 @@ footer {
 
 @font-face {
   font-family: 'icomoon';
-  src: url("../fonts/icomoon.eot?jct1qu");
-  src: url("../fonts/icomoon.eot?jct1qu#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?jct1qu") format("truetype"), url("../fonts/icomoon.woff?jct1qu") format("woff"), url("../fonts/icomoon.svg?jct1qu#icomoon") format("svg");
+  src: url("../fonts/icomoon.eot?l4x1zo");
+  src: url("../fonts/icomoon.eot?l4x1zo#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?l4x1zo") format("truetype"), url("../fonts/icomoon.woff?l4x1zo") format("woff"), url("../fonts/icomoon.svg?l4x1zo#icomoon") format("svg");
   font-weight: normal;
   font-style: normal; }
 
@@ -650,6 +767,9 @@ footer {
 
 .icon-social-github:before {
   content: "\e901"; }
+
+.icon-arrow-right-outline:before {
+  content: "\e900"; }
 
 .icon-document:before {
   content: "\e005"; }

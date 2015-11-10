@@ -10,6 +10,7 @@
 
 .arts-gallery--title-break {
   border: 1px solid $light-macaw-blue;
+  border-radius: 50px;
 }
 
 .arts-gallery--piece-image {
@@ -29,4 +30,26 @@
   font-size: 1.1em;
   text-aligh: justify;
   line-height: 1.5em;
+}
+
+.arts-gallery--view {
+  font-size: 2em;
+}
+
+.arts-gallery--icon {
+  color: black;
+}
+
+.lnr-chevron-right-circle {
+  color: $dev-color;
+  font-size: 2em;
+  transition: all .4s linear;
+}
+
+.arts-gallery--view {
+  font-weight: 200;
+
+}
+.arts-gallery--pagebreak {
+  border: 7px solid $body-gray;
 }
