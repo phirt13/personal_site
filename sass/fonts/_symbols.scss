@@ -3,11 +3,11 @@
 
 @font-face {
 	font-family: 'icomoon';
-	src:url('../fonts/icomoon.eot?jct1qu');
-	src:url('../fonts/icomoon.eot?jct1qu#iefix') format('embedded-opentype'),
-		url('../fonts/icomoon.ttf?jct1qu') format('truetype'),
-		url('../fonts/icomoon.woff?jct1qu') format('woff'),
-		url('../fonts/icomoon.svg?jct1qu#icomoon') format('svg');
+	src:url('../fonts/icomoon.eot?l4x1zo');
+	src:url('../fonts/icomoon.eot?l4x1zo#iefix') format('embedded-opentype'),
+		url('../fonts/icomoon.ttf?l4x1zo') format('truetype'),
+		url('../fonts/icomoon.woff?l4x1zo') format('woff'),
+		url('../fonts/icomoon.svg?l4x1zo#icomoon') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -28,6 +28,9 @@
 
 .icon-social-github:before {
 	content: "\e901";
+}
+.icon-arrow-right-outline:before {
+	content: "\e900";
 }
 .icon-document:before {
 	content: "\e005";
