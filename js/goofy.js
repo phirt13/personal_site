@@ -4,7 +4,6 @@
 
   var artsTitle = document.getElementById('art-title');
   var ohBubble = document.getElementById('speech-bubble');
-  var
 
   console.log(ohBubble);
   console.log(artsTitle);

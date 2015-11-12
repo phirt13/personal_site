@@ -55,8 +55,8 @@
     // animation: bounceArrow 3s linear;
     // -webkit-animation: bounceArrow 3s linear;
   }
-  &:hover .arts-gallery--view {
-    color: black;
+  &:hover {
+    cursor: pointer;
   }
 }
 

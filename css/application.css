@@ -369,8 +369,8 @@ header {
   .view-more-section:hover .arts-gallery--icon {
     transform: translateX(10px);
     z-index: 0; }
-  .view-more-section:hover .arts-gallery--view {
-    color: black; }
+  .view-more-section:hover {
+    cursor: pointer; }
 
 .view-bar {
   display: block;
