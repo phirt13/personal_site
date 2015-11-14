@@ -10,9 +10,14 @@ body {
   background-color: white;
   color: $dark-graphite-gray;
   border: .8em solid rgba(231, 231, 232, 1);
+  overflow: auto;
 }
 
 .arts-main {
+}
+
+.dev-main {
+  // float: left;
 }
 
 p {
