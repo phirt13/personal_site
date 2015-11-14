@@ -55,7 +55,8 @@ body {
   letter-spacing: .05em;
   background-color: white;
   color: #303030;
-  border: 0.8em solid #e7e7e8; }
+  border: 0.8em solid #e7e7e8;
+  overflow: auto; }
 
 p {
   color: #303030;
@@ -407,6 +408,13 @@ header {
     transform: translateX(6px); }
   100% {
     transform: translateX(0px); } }
+
+.dev-header {
+  position: fixed;
+  float: left;
+  display: block;
+  width: 20%;
+  height: 500px; }
 
 .coverpage-icon {
   display: inline-block;
