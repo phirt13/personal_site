@@ -1,7 +1,18 @@
 .dev-header {
   position: fixed;
-  float: left;
+  // float: left;
   display: block;
   width: 20%;
-  height: 500px;
+  height: 100%;
+  background-color: red;
+}
+
+.dev-main {
+  // float: left;
+  padding: 5em;
+  margin-left: 0%;
+}
+
+.dev-body {
+  overflow: auto;
 }
