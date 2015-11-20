@@ -4,7 +4,11 @@
   display: block;
   width: 20%;
   height: 100%;
-  background-color: red;
+  background-image: url('../pics/cropped-bw.jpg'), linear-gradient(90deg, $dev- 10%, $dev-color 90%);;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: multiply;
 }
 
 .dev-main {

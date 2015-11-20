@@ -414,11 +414,15 @@ header {
   display: block;
   width: 20%;
   height: 100%;
-  background-color: red; }
+  background-image: url("../pics/cropped-bw.jpg"), linear-gradient(90deg, #fea900 10%, #fea900 90%);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: multiply; }
 
 .dev-main {
   padding: 5em;
-  margin-left: 0%; }
+  margin-left: 10%; }
 
 .dev-body {
   overflow: auto; }
