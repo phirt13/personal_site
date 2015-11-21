@@ -2,22 +2,17 @@ html {
   // background-color: white;
 }
 
-body {
+body{
   font-family: $main-body-font;
   font-weight: 100;
   font-size: $default-em;
   letter-spacing: .05em;
   background-color: white;
   color: $dark-graphite-gray;
+  &:not(.dev-body) {
   border: .8em solid rgba(231, 231, 232, 1);
+  }
   overflow: auto;
-}
-
-.arts-main {
-}
-
-.dev-main {
-  // float: left;
 }
 
 p {
