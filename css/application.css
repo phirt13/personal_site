@@ -55,8 +55,9 @@ body {
   letter-spacing: .05em;
   background-color: white;
   color: #303030;
-  border: 0.8em solid #e7e7e8;
   overflow: auto; }
+  body:not(.dev-body) {
+    border: 0.8em solid #e7e7e8; }
 
 p {
   color: #303030;
@@ -414,6 +415,7 @@ header {
   display: block;
   width: 20%;
   height: 100%;
+  background-color: #fea900;
   background-image: url("../pics/cropped-bw.jpg"), linear-gradient(90deg, #fea900 10%, #fea900 90%);
   background-repeat: no-repeat;
   background-position: center;
@@ -421,10 +423,16 @@ header {
   background-blend-mode: multiply; }
 
 .dev-main {
-  padding: 5em;
-  margin-left: 10%; }
+  padding: 2.5em 5em;
+  height: 100%;
+  margin-left: 20%; }
+
+.dev-footer {
+  margin-left: 20%; }
 
 .dev-body {
+  border-right: 0.8em solid #e7e7e8;
+  border-left: 0.8em solid #e7e7e8;
   overflow: auto; }
 
 .coverpage-icon {
@@ -682,6 +690,21 @@ footer {
 .arts-gallery--pagebreak {
   border: 7px solid #e7e7e8; }
 
+.dev-main--title {
+  font-family: "Quicksand", sans-serif;
+  color: #2E2E2E;
+  font-size: 3em;
+  font-weight: 200; }
+
+.dev-main--pagebreak {
+  border: 1px solid #fea900; }
+
+.dev-header--icon {
+  color: white;
+  font-size: 5em;
+  padding: .2em;
+  background-color: rgba(255, 255, 255, 0.7); }
+
 .coverpage-icon {
   color: #bdbdbd;
   font-size: 5em;
@@ -767,8 +790,8 @@ footer {
 
 @font-face {
   font-family: 'icomoon';
-  src: url("../fonts/icomoon.eot?l4x1zo");
-  src: url("../fonts/icomoon.eot?l4x1zo#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?l4x1zo") format("truetype"), url("../fonts/icomoon.woff?l4x1zo") format("woff"), url("../fonts/icomoon.svg?l4x1zo#icomoon") format("svg");
+  src: url("../fonts/icomoon.eot?4g6frm");
+  src: url("../fonts/icomoon.eot?4g6frm#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?4g6frm") format("truetype"), url("../fonts/icomoon.woff?4g6frm") format("woff"), url("../fonts/icomoon.svg?4g6frm#icomoon") format("svg");
   font-weight: normal;
   font-style: normal; }
 
@@ -784,6 +807,12 @@ footer {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
+.icon-target:before {
+  content: "\e903"; }
+
+.icon-social-linkedin:before {
+  content: "\e902"; }
+
 .icon-social-github:before {
   content: "\e901"; }
 
@@ -795,6 +824,12 @@ footer {
 
 .icon-pencil:before {
   content: "\e032"; }
+
+.icon-circle-compass:before {
+  content: "\e038"; }
+
+.icon-global:before {
+  content: "\e052"; }
 
 .icon-linkedin:before {
   content: "\e062"; }

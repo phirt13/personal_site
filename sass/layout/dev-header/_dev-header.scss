@@ -4,7 +4,8 @@
   display: block;
   width: 20%;
   height: 100%;
-  background-image: url('../pics/cropped-bw.jpg'), linear-gradient(90deg, $dev- 10%, $dev-color 90%);;
+  background-color: $dev-color;
+  background-image: url('../pics/cropped-bw.jpg'), linear-gradient(90deg, $dev-color 10%, $dev-color 90%);;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -13,10 +14,17 @@
 
 .dev-main {
   // float: left;
-  padding: 5em;
-  margin-left: 0%;
+  padding: 2.5em 5em;
+  height: 100%;
+  margin-left: 20%;
+}
+
+.dev-footer {
+  margin-left: 20%;
 }
 
 .dev-body {
+  border-right: .8em solid rgba(231, 231, 232, 1);
+  border-left: .8em solid rgba(231, 231, 232, 1);
   overflow: auto;
 }

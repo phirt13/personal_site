@@ -1,0 +1,18 @@
+.dev-main--title {
+  font-family: $header-font;
+  color: $darkest-graphite-gray;
+  font-size: 3em;
+  font-weight: 200;
+}
+
+.dev-main--pagebreak {
+  border: 1px solid $dev-color;
+}
+
+.dev-header--icon {
+  color: white;
+  font-size: 5em;
+  // border: 1px solid white;
+  padding: .2em;
+  background-color: rgba(255, 255, 255, 0.7);
+}
