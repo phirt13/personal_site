@@ -702,10 +702,7 @@ footer {
 .dev-header--icon {
   color: white;
   font-size: 5em;
-  border-top: 1px solid white;
-  border-bottom: 1px solid white;
-  padding: .2em;
-  background-color: rgba(255, 255, 255, 0.7); }
+  padding: .2em; }
 
 .coverpage-icon {
   color: #bdbdbd;
