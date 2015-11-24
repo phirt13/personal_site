@@ -2,6 +2,7 @@
   position: fixed;
   // float: left;
   display: block;
+  overflow: auto;
   width: 20%;
   height: 100%;
   background-color: $dev-color;
@@ -28,3 +29,22 @@
   border-left: .8em solid rgba(231, 231, 232, 1);
   overflow: auto;
 }
+
+.dev-navbar {
+  margin-top: 7em;
+}
+.dev-navbar--list {
+  text-align: right;
+  margin: 1em 0em 0 1em;
+  font-size: 1.5em;
+  padding: .5em .5em .5em 0;
+  background-color: $dev-navbar-background;
+}
+.dev-navbar--link {
+  color: $darkest-graphite-gray;
+  &:visited {
+    color: $darkest-graphite-gray;
+  }
+}
+
+//fix the classes on the html and sass
