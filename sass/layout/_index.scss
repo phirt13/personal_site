@@ -1,20 +1,12 @@
 @import 'base';
+@import 'grid';
 
 // Coverpage Index:
-@import 'page-header/page-header';
-@import 'footer/footer';
-@import 'grid';
-@import 'contact-me/contact-me';
-@import 'contact-form/contact-form';
-@import 'text-fields/text-fields';
-@import 'icons/icons';
+@import 'coverpage/index';
 
 //Arts Site:
-@import 'arts-header/arts-header';
-@import 'arts-navbar/arts-navbar';
-@import 'arts-gallery/arts-gallery';
+@import 'arts-site/index';
 
 // Dev Site:
-@import 'dev-header/dev-header';
-@import 'dev-navbar/dev-navbar';
-@import 'dev-main/dev-main';
+@import 'dev-site/index';
+

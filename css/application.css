@@ -106,40 +106,6 @@ label {
 footer {
   padding: 5em; }
 
-header {
-  text-align: center;
-  padding: 0em 0 0em 0;
-  overflow: auto; }
-
-.primary-header {
-  padding: 12em; }
-
-.secondary-header, .secondary-header--link-dev, .secondary-header--link-artist {
-  overflow: auto; }
-
-.secondary-header .title-dev, .secondary-header .title-artist {
-  float: left;
-  width: 50%;
-  padding: 1em;
-  text-align: center; }
-
-.spacer-1, .spacer-2, .spacer-3, .spacer-4 {
-  float: left;
-  width: 25%;
-  height: 5em; }
-
-.spacer-section--two {
-  overflow: auto; }
-
-.spacer-5, .spacer-6 {
-  float: left;
-  width: 50%; }
-
-.footer-copywright {
-  font-size: .9em;
-  font-weight: 100;
-  color: white; }
-
 * {
   margin: 0;
   padding: 0;
@@ -258,6 +224,40 @@ header {
   .grid-10,
   .grid-12 {
     width: 50%; } }
+
+header {
+  text-align: center;
+  padding: 0em 0 0em 0;
+  overflow: auto; }
+
+.primary-header {
+  padding: 12em; }
+
+.secondary-header, .secondary-header--link-dev, .secondary-header--link-artist {
+  overflow: auto; }
+
+.secondary-header .title-dev, .secondary-header .title-artist {
+  float: left;
+  width: 50%;
+  padding: 1em;
+  text-align: center; }
+
+.spacer-1, .spacer-2, .spacer-3, .spacer-4 {
+  float: left;
+  width: 25%;
+  height: 5em; }
+
+.spacer-section--two {
+  overflow: auto; }
+
+.spacer-5, .spacer-6 {
+  float: left;
+  width: 50%; }
+
+.footer-copywright {
+  font-size: .9em;
+  font-weight: 100;
+  color: white; }
 
 .contact {
   overflow: auto;
