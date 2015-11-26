@@ -1,0 +1,18 @@
+.dev-header {
+  background-color: $dev-color;
+  background-image: url('../pics/cropped-bw.jpg'), linear-gradient(90deg, $dev-color 10%, $dev-color 90%);;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: multiply;
+}
+
+.dev-header--icon {
+  color: white;
+  font-size: 5em;
+  // border-top: 1px solid white;
+  // border-bottom: 1px solid white;
+  padding: .2em;
+  // background-color: rgba(255, 255, 255, 0.7);
+}
+

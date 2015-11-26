@@ -1,12 +1,12 @@
 @import 'base';
-@import 'page-header/page-header';
-@import 'footer/footer';
 @import 'grid';
-@import 'contact-me/contact-me';
-@import 'contact-form/contact-form';
-@import 'text-fields/text-fields';
-@import 'arts-header/arts-header';
-@import 'arts-navbar/arts-navbar';
-@import 'arts-gallery/arts-gallery';
-@import 'dev-header/dev-header';
-@import 'icons/icons';
+
+// Coverpage Index:
+@import 'coverpage/index';
+
+//Arts Site:
+@import 'arts-site/index';
+
+// Dev Site:
+@import 'dev-site/index';
+

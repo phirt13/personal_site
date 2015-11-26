@@ -1,0 +1,22 @@
+.dev-header {
+  position: fixed;
+  // float: left;
+  display: block;
+  overflow: auto;
+  width: 20%;
+  height: 100%;
+}
+
+.dev-footer {
+  margin-left: 20%;
+}
+
+.dev-body {
+  border-right: .8em solid rgba(231, 231, 232, 1);
+  border-left: .8em solid rgba(231, 231, 232, 1);
+  overflow: auto;
+}
+
+
+
+//fix the classes on the html and sass
