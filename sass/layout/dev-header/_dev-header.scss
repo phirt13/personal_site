@@ -5,19 +5,6 @@
   overflow: auto;
   width: 20%;
   height: 100%;
-  background-color: $dev-color;
-  background-image: url('../pics/cropped-bw.jpg'), linear-gradient(90deg, $dev-color 10%, $dev-color 90%);;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-blend-mode: multiply;
-}
-
-.dev-main {
-  // float: left;
-  padding: 2.5em 5em;
-  height: 100%;
-  margin-left: 20%;
 }
 
 .dev-footer {
@@ -30,24 +17,6 @@
   overflow: auto;
 }
 
-.dev-navbar {
-  margin-top: 10em;
-}
 
-.dev-navbar--list {
-  text-align: right;
-  margin: 1em 0em 0 3em;
-  font-family: $header-font;
-  font-size: 1.5em;
-  padding: .5em .5em .5em 0;
-  border-left: 5px solid white;
-  background-color: $dev-navbar-background;
-}
-.dev-navbar--link {
-  color: $darkest-graphite-gray;
-  &:visited {
-    color: $darkest-graphite-gray;
-  }
-}
 
 //fix the classes on the html and sass

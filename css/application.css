@@ -285,6 +285,10 @@ header {
   text-align: justify;
   line-height: 2em; }
 
+.coverpage-icon {
+  display: inline-block;
+  margin-bottom: .5em; }
+
 .arts-header {
   text-align: left;
   padding: 7em 0em 0em 0em; }
@@ -415,18 +419,7 @@ header {
   display: block;
   overflow: auto;
   width: 20%;
-  height: 100%;
-  background-color: #fea900;
-  background-image: url("../pics/cropped-bw.jpg"), linear-gradient(90deg, #fea900 10%, #fea900 90%);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-blend-mode: multiply; }
-
-.dev-main {
-  padding: 2.5em 5em;
-  height: 100%;
-  margin-left: 20%; }
+  height: 100%; }
 
 .dev-footer {
   margin-left: 20%; }
@@ -436,54 +429,10 @@ header {
   border-left: 0.8em solid #e7e7e8;
   overflow: auto; }
 
-.dev-navbar {
-  margin-top: 10em; }
-
-.dev-navbar--list {
-  text-align: right;
-  margin: 1em 0em 0 3em;
-  font-family: "Quicksand", sans-serif;
-  font-size: 1.5em;
-  padding: 0.5em 0.5em 0.5em 0;
-  border-left: 5px solid white;
-  background-color: rgba(255, 255, 255, 0.8); }
-
-.dev-navbar--link {
-  color: #2E2E2E; }
-  .dev-navbar--link:visited {
-    color: #2E2E2E; }
-
-.coverpage-icon {
-  display: inline-block;
-  margin-bottom: .5em; }
-
-body {
-  margin: 0 auto;
-  width: 100%;
-  max-width: 100%; }
-
-.coverpage-main {
-  width: 90%;
-  margin: 0 auto;
-  overflow: auto; }
-
-p {
-  margin-top: 0.5em; }
-
-button {
-  display: block;
-  padding: 0.5em; }
-
-input {
-  box-sizing: border-box;
-  padding: .5em;
-  margin-top: 1em; }
-
-label {
-  margin-top: 1em; }
-
-footer {
-  padding: 5em; }
+.dev-main {
+  padding: 2.5em 5em;
+  height: 100%;
+  margin-left: 20%; }
 
 .primary-header {
   font-family: "Quicksand", sans-serif;
@@ -592,6 +541,11 @@ footer {
     transform: scale(1.2); }
   .contact .contact-email:hover .contact-header, .contact .contact-resume:hover .contact-header, .contact .contact-linkedin:hover .contact-header {
     transform: scale(1.1); }
+
+.coverpage-icon {
+  color: #bdbdbd;
+  font-size: 5em;
+  transition: all 0.4s linear; }
 
 .arts-header {
   background-color: #4fdfbb;
@@ -708,24 +662,45 @@ footer {
 .arts-gallery--pagebreak {
   border: 7px solid #e7e7e8; }
 
-.dev-main--title {
-  font-family: "Quicksand", sans-serif;
-  color: #2E2E2E;
-  font-size: 3em;
-  font-weight: 200; }
-
-.dev-main--pagebreak {
-  border: 1px solid #fea900; }
+.dev-header {
+  background-color: #fea900;
+  background-image: url("../pics/cropped-bw.jpg"), linear-gradient(90deg, #fea900 10%, #fea900 90%);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: multiply; }
 
 .dev-header--icon {
   color: white;
   font-size: 5em;
   padding: .2em; }
 
-.coverpage-icon {
-  color: #bdbdbd;
-  font-size: 5em;
-  transition: all 0.4s linear; }
+.dev-navbar {
+  margin-top: 10em; }
+
+.dev-navbar--list {
+  text-align: right;
+  margin: 1em 0em 0 3em;
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.5em;
+  padding: 0.5em 0.5em 0.5em 0;
+  border-left: 5px solid white;
+  background-color: rgba(255, 255, 255, 0.8); }
+
+.dev-navbar--link {
+  color: #2E2E2E; }
+  .dev-navbar--link:visited {
+    color: #2E2E2E; }
+
+.dev-main--pagebreak {
+  border: 1px solid #FFB400;
+  border-radius: 5px; }
+
+.dev-main--title {
+  font-family: "Quicksand", sans-serif;
+  color: #2E2E2E;
+  font-size: 3em;
+  font-weight: 200; }
 
 @font-face {
   font-family: 'Quicksand';
