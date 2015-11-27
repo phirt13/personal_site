@@ -434,6 +434,9 @@ header {
   height: 100%;
   margin-left: 20%; }
 
+.dev-main--pagebreak {
+  margin: 0.5em 0 1em 0; }
+
 .primary-header {
   font-family: "Quicksand", sans-serif;
   font-weight: 200;
@@ -680,7 +683,7 @@ header {
 
 .dev-navbar--list {
   text-align: right;
-  margin: 1em 0em 0 0.5em;
+  margin: 1em 0em 0 0em;
   font-family: "Quicksand", sans-serif;
   font-size: 1.5em;
   padding: 0.5em 0.5em 0.5em 0;
@@ -698,20 +701,21 @@ header {
 
 .dev-navbar--div-inner {
   border-left: 1px solid white;
-  margin-left: 1em;
   transition: all 0.4s linear; }
 
 .dev-navbar--div-outer {
   border-left: 1px solid white;
-  margin-left: 2em;
+  margin-left: 5em;
   transition: all 0.4s linear; }
   .dev-navbar--div-outer:hover {
     border-left: 1px solid #FFB400;
     margin-left: 1em; }
   .dev-navbar--div-outer:hover .dev-navbar--list {
-    border-left: 5px solid #FFB400; }
+    border-left: 5px solid #FFB400;
+    margin-left: 0.5em; }
   .dev-navbar--div-outer:hover .dev-navbar--div-inner {
-    border-left: 2.5px solid #FFB400; }
+    border-left: 2.5px solid #FFB400;
+    margin-left: 1em; }
 
 .dev-main--pagebreak {
   border: 1px solid #FFB400;
