@@ -418,11 +418,12 @@ header {
   position: fixed;
   display: block;
   overflow: auto;
-  width: 20%;
+  width: 256px;
   height: 100%; }
 
 .dev-footer {
-  margin-left: 20%; }
+  margin-left: 256px;
+  margin-top: 5em; }
 
 .dev-body {
   border-right: 0.8em solid #e7e7e8;
@@ -432,7 +433,10 @@ header {
 .dev-main {
   padding: 2.5em 5em;
   height: 100%;
-  margin-left: 20%; }
+  margin-left: 256px; }
+
+.dev-main--pagebreak {
+  margin: 0.5em 0 1em 0; }
 
 .primary-header {
   font-family: "Quicksand", sans-serif;
@@ -676,21 +680,43 @@ header {
   padding: .2em; }
 
 .dev-navbar {
-  margin-top: 10em; }
+  margin-top: 8em; }
 
 .dev-navbar--list {
   text-align: right;
-  margin: 1em 0em 0 3em;
+  margin: 1em 0em 0 0em;
   font-family: "Quicksand", sans-serif;
   font-size: 1.5em;
   padding: 0.5em 0.5em 0.5em 0;
-  border-left: 5px solid white;
-  background-color: rgba(255, 255, 255, 0.8); }
+  border-left: 1px solid white;
+  background-color: rgba(255, 255, 255, 0.8);
+  transition: all 0.4s linear; }
+  .dev-navbar--list:hover {
+    cursor: pointer;
+    border-left: 5px solid #FFB400; }
 
 .dev-navbar--link {
   color: #2E2E2E; }
   .dev-navbar--link:visited {
     color: #2E2E2E; }
+
+.dev-navbar--div-inner {
+  border-left: 1px solid white;
+  transition: all 0.4s linear; }
+
+.dev-navbar--div-outer {
+  border-left: 1px solid white;
+  margin-left: 5em;
+  transition: all 0.4s linear; }
+  .dev-navbar--div-outer:hover {
+    border-left: 1px solid #FFB400;
+    margin-left: 1em; }
+  .dev-navbar--div-outer:hover .dev-navbar--list {
+    border-left: 5px solid #FFB400;
+    margin-left: 0.5em; }
+  .dev-navbar--div-outer:hover .dev-navbar--div-inner {
+    border-left: 2.5px solid #FFB400;
+    margin-left: 1em; }
 
 .dev-main--pagebreak {
   border: 1px solid #FFB400;
@@ -701,6 +727,12 @@ header {
   color: #2E2E2E;
   font-size: 3em;
   font-weight: 200; }
+
+.dev-main--secondary-title {
+  font-family: "Quicksand", sans-serif;
+  font-size: 2em;
+  padding-top: .5em;
+  margin-top: 2.5em; }
 
 @font-face {
   font-family: 'Quicksand';
