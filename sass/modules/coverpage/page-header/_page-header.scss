@@ -1,9 +1,7 @@
 .primary-header {
   font-family: $header-font;
   font-weight: 200;
-  text-align: center;
   color: white;
-
   background-image: url('../pics/bw-macro.jpg'), linear-gradient(90deg, $dev-color 10%, $artist-color 90%);;
   background-repeat: no-repeat;
   background-position: center;
