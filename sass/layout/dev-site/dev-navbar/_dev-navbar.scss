@@ -1,0 +1,23 @@
+.dev-navbar {
+  margin-top: 8em;
+}
+
+.dev-navbar--list {
+  text-align: right;
+  margin: 1em 0em 0 0em;
+  padding: 0.5em 0.5em 0.5em 0;
+}
+
+.dev-navbar--div-outer {
+  margin-left: 5em;
+  transition: all 0.4s linear;
+  &:hover {
+    margin-left: 1em;
+  }
+  &:hover .dev-navbar--list {
+    margin-left: 0.5em;
+  }
+  &:hover .dev-navbar--div-inner {
+    margin-left: 1em;
+  }
+}
