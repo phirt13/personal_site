@@ -6,14 +6,14 @@ var minifyCSS = require('gulp-minify-css');
 
 gulp.task('sass', function() {
 
-  gulp.src('./sass/**/*.scss')
+  gulp.src('./public/sass/**/*.scss')
     .pipe(sass.sync().on('error', sass.logError))
     // .pipe(minifyCSS({compaibility: 'ie8'}))
-    .pipe(gulp.dest('./css'));
+    .pipe(gulp.dest('./public/css'));
 });
 
 gulp.task('sass:watch', function() {
-  gulp.watch('./sass/**/*.scss', ['sass']);
+  gulp.watch('./public/sass/**/*.scss', ['sass']);
 });
 
 gulp.task('build', ['sass']);

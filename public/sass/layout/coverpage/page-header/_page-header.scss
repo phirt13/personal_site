@@ -8,6 +8,10 @@ header {
 .primary-header {
   text-align: center;
   padding: 12em;
+
+  @media (min-width: 5em) and (max-width: 60em) {
+    padding: 4em 0em 4em 0em;
+  }
 }
 
 .secondary-header, .secondary-header--link-dev, .secondary-header--link-artist  {
@@ -21,6 +25,27 @@ header {
   text-align: center;
 }
 
+@media (min-width: 5em) and (max-width: 60em) {
+  .secondary-header .title-dev, .secondary-header .title-artist {
+    width: 100%;
+  }
+  .secondary-header .title-dev {
+    margin-bottom: 1em;
+  }
+  .secondary-header .title-artist {
+    margin-top: 1em;
+  }
+}
+
+.mobile-and {
+  display: none;
+}
+
+@media (min-width: 5em) and (max-width: 60em) {
+  .mobile-and {
+    display: block;
+  }
+}
 
 .spacer-1, .spacer-2, .spacer-3, .spacer-4 {
   float: left;
@@ -28,6 +53,11 @@ header {
   height: 5em;
 }
 
+@media (min-width: 5em) and (max-width: 60em) {
+  .spacer-1, .spacer-2, .spacer-3, .spacer-4 {
+    display: none;
+  }
+}
 .spacer-section--two {
   overflow: auto;
 }
