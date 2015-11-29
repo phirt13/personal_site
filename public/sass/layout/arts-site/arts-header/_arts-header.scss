@@ -23,3 +23,31 @@
   top: 70px;
   z-index: 10;
 }
+
+@media (min-width: 5em) and (max-width: 65em) {
+  .arts-header {
+    text-align: center;
+  }
+
+  .arts-header--title {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .oh-speech-bubble {
+    position: absolute;
+    padding: 1em;
+    left: 240px;
+    top: 70px;
+    z-index: -10;
+  }
+
+  .oh-speech-bubble--active {
+    position: absolute;
+    padding: 1em;
+    left: 300px;
+    top: 50px;
+    z-index: 10;
+  }
+}
