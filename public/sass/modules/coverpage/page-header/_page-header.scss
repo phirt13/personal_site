@@ -14,7 +14,7 @@
   font-size: 8em;
 }
 
-@media (min-width: 5em) and (max-width: 60em) {
+@media (min-width: 5em) and (max-width: 65em) {
   .primary-header {
     border-bottom: 10px solid rgba(231, 231, 232, 1);
   }
@@ -50,7 +50,7 @@
   }
 }
 
-@media (min-width: 5em) and (max-width: 60em) {
+@media (min-width: 5em) and (max-width: 65em) {
   .secondary-header .title-artist {
     font-size: 1.2em;
     border-top: 2px solid $artist-color;
@@ -71,7 +71,7 @@
   }
 }
 
-@media (min-width: 5em) and (max-width: 60em) {
+@media (min-width: 5em) and (max-width: 65em) {
   .secondary-header .title-dev {
     font-size: 1.2em;
     border-top: 2px solid $dev-color;

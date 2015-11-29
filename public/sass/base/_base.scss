@@ -15,7 +15,7 @@ body{
   overflow: auto;
 }
 
-@media (min-width: 5em) and (max-width: 60em) {
+@media (min-width: 5em) and (max-width: 65em) {
   body:not(.dev-body) {
     border: none;
   }
