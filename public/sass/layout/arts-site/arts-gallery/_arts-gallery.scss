@@ -115,3 +115,50 @@
   }
 
 }
+
+
+@media (min-width: 5em) and (max-width: 65em) {
+  .arts-gallery {
+    padding: 1em;
+  }
+  .arts-gallery--title-break {
+    width: 40%;
+    display: block;
+    margin: 0 auto 1em auto;
+  }
+
+  .arts-gallery--piece-image {
+    float: none;
+    width: 100%;
+    padding: 0em;
+  }
+
+  .arts-gallery--piece-text {
+    float: none;
+    width: 100%;
+    padding: 1em 0;
+  }
+
+  .arts-gallery--piece-title {
+    text-align: center;
+  }
+
+  .arts-gallery--piece-date {
+    text-align: center;
+    font-size: 1em;
+  }
+
+  .arts-gallery--piece-description {
+    text-align: justify;
+    line-height: 1.5em;
+    padding: 1em 0;
+  }
+
+  .view-more-section {
+    width: 100%;
+  }
+
+  .view-bar {
+    width: 40%;
+  }
+}

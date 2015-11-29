@@ -25,3 +25,16 @@
   font-size: 2em;
   text-align: center;
 }
+
+@media (min-width: 5em) and (max-width: 65em) {
+  .arts-navbar--link {
+    border-bottom: 1px solid $light-graphite-gray;
+    &:hover {
+      border-bottom:  1px solid $light-macaw-blue;
+    }
+  }
+
+  .arts-hero--text {
+    font-size: 1em;
+  }
+}

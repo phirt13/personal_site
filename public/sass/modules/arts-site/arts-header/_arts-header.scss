@@ -77,7 +77,11 @@
   }
 }
 
-
+@media (min-width: 5em) and (max-width: 65em) {
+  .arts-header--title {
+    font-size: 3.5em;
+  }
+}
 // @keyframes fadeIn {
 //   0% {
 //     opacity: 0.0;

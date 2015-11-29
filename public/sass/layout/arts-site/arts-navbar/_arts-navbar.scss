@@ -24,3 +24,18 @@
   text-align: center;
   margin-bottom: 1em;
 }
+
+@media (min-width: 5em) and (max-width: 65em) {
+  .arts-navbar {
+    padding: 0;
+  }
+
+  .arts-navbar--link {
+    float: none;
+    display: block;
+  }
+
+  .arts-hero {
+    padding: 5em 1em;
+  }
+}
