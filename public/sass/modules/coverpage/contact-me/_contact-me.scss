@@ -1,0 +1,59 @@
+.contact {
+  .title {
+    font-family: $header-font;
+    font-size: 2em;
+    font-weight: 200;
+    color: $dark-graphite-gray;
+  }
+  .contact-header {
+    font-size: 1.5em;
+    transition: all .4s linear;
+  }
+
+  .contact-email, .contact-resume, .contact-linkedin {
+    border-top: 1px solid transparent;
+    transition: all .4s linear;
+    &:hover {
+      border-top: 1px solid $dark-graphite-gray;
+      cursor: pointer;
+    }
+    &:hover .coverpage-icon {
+      color: $dark-graphite-gray;
+      transform: scale(1.2);
+    }
+    &:hover .contact-header{
+      transform: scale(1.1);
+    }
+  }
+}
+
+.coverpage-icon {
+  color: $light-graphite-gray;
+  font-size: 5em;
+  transition: all .4s linear;
+}
+
+@media (min-width: 5em) and (max-width: 65em) {
+  .contact {
+    .contact-resume {
+      border-top: 1px solid transparent;
+      &:hover {
+        border-top: 1px solid transparent;
+      }
+    }
+    .contact-email, .contact-linkedin {
+      border-top: 1px solid $light-graphite-gray;
+      &:hover {
+        border-top: 1px solid $dark-graphite-gray;
+        cursor: pointer;
+      }
+      &:hover .coverpage-icon {
+        color: $dark-graphite-gray;
+        transform: scale(1.2);
+      }
+      &:hover .contact-header{
+        transform: scale(1.1);
+      }
+    }
+  }
+}

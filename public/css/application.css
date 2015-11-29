@@ -59,6 +59,10 @@ body {
   body:not(.dev-body) {
     border: 0.8em solid #e7e7e8; }
 
+@media (min-width: 5em) and (max-width: 65em) {
+  body:not(.dev-body) {
+    border: none; } }
+
 p {
   color: #303030;
   letter-spacing: .05em; }
@@ -102,9 +106,6 @@ input {
 
 label {
   margin-top: 1em; }
-
-footer {
-  padding: 5em; }
 
 * {
   margin: 0;
@@ -233,9 +234,9 @@ header {
 .primary-header {
   text-align: center;
   padding: 12em; }
-  @media (min-width: 5em) and (max-width: 60em) {
+  @media (min-width: 5em) and (max-width: 65em) {
     .primary-header {
-      padding: 4em 1em 4em 1em; } }
+      padding: 5em 0em 5em 0em; } }
 
 .secondary-header, .secondary-header--link-dev, .secondary-header--link-artist {
   overflow: auto; }
@@ -246,10 +247,29 @@ header {
   padding: 1em;
   text-align: center; }
 
+@media (min-width: 5em) and (max-width: 65em) {
+  .secondary-header .title-dev, .secondary-header .title-artist {
+    width: 100%; }
+  .secondary-header .title-dev {
+    margin-bottom: 1em; }
+  .secondary-header .title-artist {
+    margin-top: 1em; } }
+
+.mobile-and {
+  display: none; }
+
+@media (min-width: 5em) and (max-width: 65em) {
+  .mobile-and {
+    display: block; } }
+
 .spacer-1, .spacer-2, .spacer-3, .spacer-4 {
   float: left;
   width: 25%;
   height: 5em; }
+
+@media (min-width: 5em) and (max-width: 65em) {
+  .spacer-1, .spacer-2, .spacer-3, .spacer-4 {
+    display: none; } }
 
 .spacer-section--two {
   overflow: auto; }
@@ -257,6 +277,9 @@ header {
 .spacer-5, .spacer-6 {
   float: left;
   width: 50%; }
+
+footer {
+  padding: 5em; }
 
 .footer-copywright {
   font-size: .9em;
@@ -266,6 +289,12 @@ header {
 .icon-github {
   display: block;
   margin: 0 auto; }
+
+@media (min-width: 5em) and (max-width: 65em) {
+  footer {
+    padding: 5em 1em; }
+  .footer-copywright {
+    font-size: .8em; } }
 
 .contact {
   overflow: auto;
@@ -282,6 +311,15 @@ header {
     margin-right: 0.499995%;
     margin-left: 0.499995%; }
 
+@media (min-width: 5em) and (max-width: 65em) {
+  .contact {
+    padding: 5em 0; }
+    .contact .title {
+      margin: 0; }
+    .contact .contact-email, .contact .contact-resume, .contact .contact-linkedin {
+      width: 100%;
+      margin: 0; } }
+
 .contact-form--section {
   position: absolute;
   z-index: -201; }
@@ -292,6 +330,12 @@ header {
 .coverpage-paragraph--text {
   text-align: justify;
   line-height: 2em; }
+
+@media (min-width: 5em) and (max-width: 65em) {
+  .coverpage-paragraph--section {
+    padding: 4em 2em; }
+  .coverpage-paragraph--text {
+    text-align: center; } }
 
 .coverpage-icon {
   display: inline-block;
@@ -489,9 +533,11 @@ header {
 .primary-header--title {
   font-size: 8em; }
 
-@media (min-width: 5em) and (max-width: 60em) {
+@media (min-width: 5em) and (max-width: 65em) {
+  .primary-header {
+    border-bottom: 10px solid #e7e7e8; }
   .primary-header--title {
-    font-size: 22em; } }
+    font-size: 3.5em; } }
 
 .secondary-header {
   color: #303030; }
@@ -512,6 +558,12 @@ header {
     background-color: #4fdfbb;
     color: white; }
 
+@media (min-width: 5em) and (max-width: 65em) {
+  .secondary-header .title-artist {
+    font-size: 1.2em;
+    border-top: 2px solid #4fdfbb;
+    border-bottom: 2px solid #4fdfbb; } }
+
 .secondary-header .title-dev {
   font-family: "Quicksand", sans-serif;
   font-weight: 200;
@@ -522,6 +574,13 @@ header {
   .secondary-header .title-dev:hover {
     background-color: #fea900;
     color: white; }
+
+@media (min-width: 5em) and (max-width: 65em) {
+  .secondary-header .title-dev {
+    font-size: 1.2em;
+    border-top: 2px solid #fea900;
+    border-bottom: 2px solid #fea900;
+    border-left: none; } }
 
 .spacer-1, .spacer-2 {
   border-bottom: 2px solid #fea900; }
@@ -562,6 +621,10 @@ header {
   font-weight: 100;
   font-size: 1.5em; }
 
+@media (min-width: 5em) and (max-width: 65em) {
+  .coverpage-paragraph--text {
+    font-size: 1em; } }
+
 .contact .title {
   font-family: "Quicksand", sans-serif;
   font-size: 2em;
@@ -583,6 +646,27 @@ header {
     transform: scale(1.2); }
   .contact .contact-email:hover .contact-header, .contact .contact-resume:hover .contact-header, .contact .contact-linkedin:hover .contact-header {
     transform: scale(1.1); }
+
+.coverpage-icon {
+  color: #bdbdbd;
+  font-size: 5em;
+  transition: all 0.4s linear; }
+
+@media (min-width: 5em) and (max-width: 65em) {
+  .contact .contact-resume {
+    border-top: 1px solid transparent; }
+    .contact .contact-resume:hover {
+      border-top: 1px solid transparent; }
+  .contact .contact-email, .contact .contact-linkedin {
+    border-top: 1px solid #bdbdbd; }
+    .contact .contact-email:hover, .contact .contact-linkedin:hover {
+      border-top: 1px solid #303030;
+      cursor: pointer; }
+    .contact .contact-email:hover .coverpage-icon, .contact .contact-linkedin:hover .coverpage-icon {
+      color: #303030;
+      transform: scale(1.2); }
+    .contact .contact-email:hover .contact-header, .contact .contact-linkedin:hover .contact-header {
+      transform: scale(1.1); } }
 
 .coverpage-icon {
   color: #bdbdbd;

@@ -1,0 +1,23 @@
+footer {
+  padding: 5em;
+}
+
+.footer-copywright {
+  font-size: .9em;
+  font-weight: 100;
+  color: white;
+}
+
+.icon-github {
+  display: block;
+  margin: 0 auto;
+}
+
+@media (min-width: 5em) and (max-width: 65em) {
+  footer {
+    padding: 5em 1em;
+  }
+  .footer-copywright {
+    font-size: .8em;
+  }
+}

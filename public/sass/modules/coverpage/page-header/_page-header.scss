@@ -7,12 +7,20 @@
   background-position: center;
   background-size: cover;
   background-blend-mode: multiply;
-
   transition:background-image 0.5s;
 }
 
 .primary-header--title {
   font-size: 8em;
+}
+
+@media (min-width: 5em) and (max-width: 65em) {
+  .primary-header {
+    border-bottom: 10px solid rgba(231, 231, 232, 1);
+  }
+  .primary-header--title {
+    font-size: 3.5em;
+  }
 }
 .secondary-header {
   color: $dark-graphite-gray;
@@ -42,6 +50,14 @@
   }
 }
 
+@media (min-width: 5em) and (max-width: 65em) {
+  .secondary-header .title-artist {
+    font-size: 1.2em;
+    border-top: 2px solid $artist-color;
+    border-bottom: 2px solid $artist-color;
+  }
+}
+
 .secondary-header .title-dev  {
   font-family: $header-font;
   font-weight: 200;
@@ -52,6 +68,17 @@
   &:hover {
     background-color: $dev-color;
     color: white;
+  }
+}
+
+@media (min-width: 5em) and (max-width: 65em) {
+  .secondary-header .title-dev {
+    font-size: 1.2em;
+    border-top: 2px solid $dev-color;
+    border-bottom: 2px solid $dev-color;
+    border-left: none;
+    // color: white;
+    // background-color: $dev-color;
   }
 }
 
@@ -86,5 +113,4 @@
 .spacer-6 {
   border-bottom: 2px solid $artist-color;
 }
-
 
