@@ -526,8 +526,17 @@ footer {
     padding: 1em 0; }
   .view-more-section {
     width: 100%; }
+    .view-more-section:hover .arts-gallery--icon {
+      transform: none; }
   .view-bar {
-    width: 40%; } }
+    width: 40%; }
+  .arts-gallery--icon {
+    position: relative;
+    margin-top: 0;
+    transform: none;
+    z-index: 0; }
+    .arts-gallery--icon:hover {
+      transform: none; } }
 
 .dev-header {
   position: fixed;

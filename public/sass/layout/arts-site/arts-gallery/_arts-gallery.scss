@@ -156,9 +156,24 @@
 
   .view-more-section {
     width: 100%;
+    &:hover .arts-gallery--icon {
+      transform: none;
+    }
   }
 
   .view-bar {
     width: 40%;
+  }
+
+  .arts-gallery--icon {
+    position: relative;
+    margin-top: 0;
+    transform: none;
+    z-index: 0;
+    &:hover {
+      transform: none;
+    }
+    // transform: translateX(-60px);
+    // z-index: -2;
   }
 }
