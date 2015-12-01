@@ -13,3 +13,11 @@
   padding-top: .5em;
   margin-top: 2.5em;
 }
+
+@media (min-width: 5em) and (max-width: 65em) {
+  .dev-main {
+    padding: 1em;
+    height: auto;
+    margin: 0;
+  }
+}

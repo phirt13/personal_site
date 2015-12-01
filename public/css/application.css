@@ -557,6 +557,15 @@ footer {
 .dev-header--icon {
   padding: .2em; }
 
+@media (min-width: 5em) and (max-width: 65em) {
+  .dev-header {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: auto; }
+  .dev-body {
+    margin: 0; } }
+
 .dev-navbar {
   margin-top: 8em; }
 
@@ -575,6 +584,11 @@ footer {
   .dev-navbar--div-outer:hover .dev-navbar--div-inner {
     margin-left: 1em; }
 
+@media (min-width: 5em) and (max-width: 65em) {
+  .dev-navbar {
+    display: none;
+    margin-right: 1em; } }
+
 .dev-main {
   padding: 2.5em 5em;
   height: 100%;
@@ -586,6 +600,12 @@ footer {
 .dev-main--secondary-title {
   padding-top: .5em;
   margin-top: 2.5em; }
+
+@media (min-width: 5em) and (max-width: 65em) {
+  .dev-main {
+    padding: 1em;
+    height: auto;
+    margin: 0; } }
 
 .primary-header {
   font-family: "Quicksand", sans-serif;
