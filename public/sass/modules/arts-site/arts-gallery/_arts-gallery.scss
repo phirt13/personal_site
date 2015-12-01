@@ -28,7 +28,7 @@
 
 .arts-gallery--piece-description {
   font-size: 1.1em;
-  text-aligh: justify;
+  text-align: justify;
   line-height: 1.5em;
 }
 
@@ -48,8 +48,17 @@
 
 .arts-gallery--view {
   font-weight: 200;
-
 }
+
 .arts-gallery--pagebreak {
   border: 7px solid $body-gray;
+}
+
+@media (min-width: 5em) and (max-width: 65em) {
+  .arts-gallery--piece-description {
+    font-size: 1em;
+    // text-align: center;
+    line-height: 1.5em;
+    // letter-spacing: .1em;
+  }
 }
