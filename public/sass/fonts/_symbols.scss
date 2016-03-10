@@ -2,55 +2,66 @@
 // -------------------------------
 
 @font-face {
-	font-family: 'icomoon';
-	src:url('../fonts/icomoon.eot?4g6frm');
-	src:url('../fonts/icomoon.eot?4g6frm#iefix') format('embedded-opentype'),
-		url('../fonts/icomoon.ttf?4g6frm') format('truetype'),
-		url('../fonts/icomoon.woff?4g6frm') format('woff'),
-		url('../fonts/icomoon.svg?4g6frm#icomoon') format('svg');
-	font-weight: normal;
-	font-style: normal;
+    font-family: 'icomoon';
+    src:    url('../fonts/icomoon.eot?3qhc9f');
+    src:    url('../fonts/icomoon.eot?3qhc9f#iefix') format('embedded-opentype'),
+        url('../fonts/icomoon.woff2?3qhc9f') format('woff2'),
+        url('../fonts/icomoon.ttf?3qhc9f') format('truetype'),
+        url('../fonts/icomoon.woff?3qhc9f') format('woff'),
+        url('../fonts/icomoon.svg?3qhc9f#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
 
 [class^="icon-"], [class*=" icon-"] {
-	font-family: 'icomoon';
-	speak: none;
-	font-style: normal;
-	font-weight: normal;
-	font-variant: normal;
-	text-transform: none;
-	line-height: 1;
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
 
-	/* Better Font Rendering =========== */
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-target:before {
-	content: "\e903";
+.icon-home2:before {
+    content: "\e600";
 }
-.icon-social-linkedin:before {
-	content: "\e902";
+.icon-cross2:before {
+    content: "\e92a";
 }
-.icon-social-github:before {
-	content: "\e901";
+.icon-menu2:before {
+    content: "\e92b";
 }
-.icon-arrow-right-outline:before {
-	content: "\e900";
+.icon-chevron-left-circle:before {
+    content: "\e964";
+}
+.icon-chevron-right-circle:before {
+    content: "\e965";
 }
 .icon-document:before {
-	content: "\e005";
+    content: "\e005";
+}
+.icon-pictures:before {
+    content: "\e010";
 }
 .icon-pencil:before {
-	content: "\e032";
-}
-.icon-circle-compass:before {
-	content: "\e038";
+    content: "\e032";
 }
 .icon-global:before {
-	content: "\e052";
+    content: "\e052";
 }
 .icon-linkedin:before {
-	content: "\e062";
+    content: "\e062";
+}
+.icon-earth:before {
+    content: "\e900";
+}
+.icon-mark-github:before {
+    content: "\f00a";
 }
 
