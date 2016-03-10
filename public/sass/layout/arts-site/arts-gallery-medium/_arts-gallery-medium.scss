@@ -1,0 +1,37 @@
+.gallery-medium-hero {
+  padding: 10em 10em 5em 10em;
+  text-align: center;
+}
+
+.gallery-medium--grid {
+  text-align: center;
+  margin: 0 auto;
+  padding: 0 0 5em 0;
+}
+
+.gallery-medium--image-section {
+  display: inline-block;
+  padding: 2em;
+  // border: 1px solid black;
+  transition: all .4s linear;
+  &:hover {
+    background-color: #e7e7e8;
+    cursor: pointer;
+  }
+}
+
+.gallery-medium--image {
+  margin-bottom: 1em;
+}
+
+@media (min-width: 5em) and (max-width: 65em) {
+  .gallery-medium-hero {
+    padding: 2em 0;
+    text-align: center;
+  }
+
+  .gallery-medium--image-section {
+    display: inline-block;
+    padding: 1em;
+  }
+}

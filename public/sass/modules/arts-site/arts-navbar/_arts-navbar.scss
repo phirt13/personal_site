@@ -26,6 +26,10 @@
   text-align: center;
 }
 
+.arts-navbar--home-icon {
+  margin: 0;
+}
+
 @media (min-width: 5em) and (max-width: 65em) {
   .arts-navbar--link {
     border-bottom: 1px solid $light-graphite-gray;

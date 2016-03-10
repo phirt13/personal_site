@@ -57,7 +57,7 @@ body {
   color: #303030;
   overflow: auto; }
   body:not(.dev-body) {
-    border: 0.8em solid #e7e7e8; }
+    border: .8em solid #e7e7e8; }
 
 @media (min-width: 5em) and (max-width: 65em) {
   body:not(.dev-body) {
@@ -538,6 +538,34 @@ footer {
     .arts-gallery--icon:hover {
       transform: none; } }
 
+.gallery-medium-hero {
+  padding: 10em 10em 5em 10em;
+  text-align: center; }
+
+.gallery-medium--grid {
+  text-align: center;
+  margin: 0 auto;
+  padding: 0 0 5em 0; }
+
+.gallery-medium--image-section {
+  display: inline-block;
+  padding: 2em;
+  transition: all 0.4s linear; }
+  .gallery-medium--image-section:hover {
+    background-color: #e7e7e8;
+    cursor: pointer; }
+
+.gallery-medium--image {
+  margin-bottom: 1em; }
+
+@media (min-width: 5em) and (max-width: 65em) {
+  .gallery-medium-hero {
+    padding: 2em 0;
+    text-align: center; }
+  .gallery-medium--image-section {
+    display: inline-block;
+    padding: 1em; } }
+
 .dev-header {
   position: fixed;
   display: block;
@@ -835,6 +863,9 @@ footer {
   font-size: 2em;
   text-align: center; }
 
+.arts-navbar--home-icon {
+  margin: 0; }
+
 @media (min-width: 5em) and (max-width: 65em) {
   .arts-navbar--link {
     border-bottom: 1px solid #bdbdbd; }
@@ -876,7 +907,7 @@ footer {
 .arts-gallery--icon {
   color: black; }
 
-.lnr-chevron-right-circle {
+.icon-chevron-right-circle {
   color: #fea900;
   font-size: 2em;
   transition: all 0.4s linear; }
@@ -1027,13 +1058,14 @@ footer {
 
 @font-face {
   font-family: 'icomoon';
-  src: url("../fonts/icomoon.eot?4g6frm");
-  src: url("../fonts/icomoon.eot?4g6frm#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?4g6frm") format("truetype"), url("../fonts/icomoon.woff?4g6frm") format("woff"), url("../fonts/icomoon.svg?4g6frm#icomoon") format("svg");
+  src: url("../fonts/icomoon.eot?3qhc9f");
+  src: url("../fonts/icomoon.eot?3qhc9f#iefix") format("embedded-opentype"), url("../fonts/icomoon.woff2?3qhc9f") format("woff2"), url("../fonts/icomoon.ttf?3qhc9f") format("truetype"), url("../fonts/icomoon.woff?3qhc9f") format("woff"), url("../fonts/icomoon.svg?3qhc9f#icomoon") format("svg");
   font-weight: normal;
   font-style: normal; }
 
 [class^="icon-"], [class*=" icon-"] {
-  font-family: 'icomoon';
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
   speak: none;
   font-style: normal;
   font-weight: normal;
@@ -1044,29 +1076,38 @@ footer {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
-.icon-target:before {
-  content: "\e903"; }
+.icon-home2:before {
+  content: "\e600"; }
 
-.icon-social-linkedin:before {
-  content: "\e902"; }
+.icon-cross2:before {
+  content: "\e92a"; }
 
-.icon-social-github:before {
-  content: "\e901"; }
+.icon-menu2:before {
+  content: "\e92b"; }
 
-.icon-arrow-right-outline:before {
-  content: "\e900"; }
+.icon-chevron-left-circle:before {
+  content: "\e964"; }
+
+.icon-chevron-right-circle:before {
+  content: "\e965"; }
 
 .icon-document:before {
   content: "\e005"; }
 
+.icon-pictures:before {
+  content: "\e010"; }
+
 .icon-pencil:before {
   content: "\e032"; }
-
-.icon-circle-compass:before {
-  content: "\e038"; }
 
 .icon-global:before {
   content: "\e052"; }
 
 .icon-linkedin:before {
   content: "\e062"; }
+
+.icon-earth:before {
+  content: "\e900"; }
+
+.icon-mark-github:before {
+  content: "\f00a"; }

@@ -10,7 +10,7 @@ body{
   background-color: white;
   color: $dark-graphite-gray;
   &:not(.dev-body) {
-  border: .8em solid rgba(231, 231, 232, 1);
+  border: .8em solid #e7e7e8;
   }
   overflow: auto;
 }
