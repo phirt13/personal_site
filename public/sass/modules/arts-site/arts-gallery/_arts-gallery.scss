@@ -40,8 +40,13 @@
   color: black;
 }
 
+.view-more-section {
+  &:hover .icon-chevron-right-circle {
+    color: $dev-color;
+  }
+}
 .icon-chevron-right-circle {
-  color: $dev-color;
+  color: white;
   font-size: 2em;
   transition: all .4s linear;
 }
@@ -54,11 +59,20 @@
   border: 7px solid $body-gray;
 }
 
+.view-bar {
+  border:1px solid $dev-color;
+}
+
 @media (min-width: 5em) and (max-width: 65em) {
   .arts-gallery--piece-description {
     font-size: 1em;
     // text-align: center;
     line-height: 1.5em;
     // letter-spacing: .1em;
+  }
+  .icon-chevron-right-circle {
+    color: $dev-color;
+    font-size: 2em;
+    transition: all .4s linear;
   }
 }

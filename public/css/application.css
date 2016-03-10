@@ -343,7 +343,8 @@ footer {
 
 .arts-header {
   text-align: left;
-  padding: 7em 0em 0em 0em; }
+  padding: 7em 0em 0em 0em;
+  overflow: auto; }
 
 .arts-header--title {
   padding-left: .5em;
@@ -365,9 +366,10 @@ footer {
 
 @media (min-width: 5em) and (max-width: 65em) {
   .arts-header {
-    text-align: center; }
+    text-align: center;
+    padding: 0; }
   .arts-header--title {
-    padding: 0;
+    padding: 1em 0;
     display: block;
     margin: 0 auto;
     width: 100%; }
@@ -380,14 +382,11 @@ footer {
   .oh-speech-bubble--active {
     position: absolute;
     padding: 1em;
-    left: 300px;
-    top: 50px;
+    left: 250px;
+    top: 2px;
     z-index: 10; } }
 
 .arts-navbar {
-  position: sticky;
-  position: -webkit-sticky;
-  top: 0px;
   overflow: auto;
   padding: 0 0.5em 0em 0; }
 
@@ -406,12 +405,20 @@ footer {
   text-align: center;
   margin-bottom: 1em; }
 
+.mobile-arts-navbar {
+  display: none; }
+
 @media (min-width: 5em) and (max-width: 65em) {
   .arts-navbar {
+    display: none;
     padding: 0; }
   .arts-navbar--link {
     float: none;
     display: block; }
+  .mobile-arts-navbar--active {
+    background-color: white;
+    display: block;
+    text-align: center; }
   .arts-hero {
     padding: 5em 1em; } }
 
@@ -431,26 +438,10 @@ footer {
   display: block;
   margin: 0 auto; }
 
-.arts-gallery--piece {
-  overflow: auto; }
-
 .arts-gallery--piece-image {
-  float: left;
-  width: 50%;
+  display: block;
+  margin: 0 auto;
   padding: 2.5em; }
-
-.arts-gallery--piece-text {
-  float: left;
-  width: 50%;
-  padding: 2.5em; }
-
-.arts-gallery--piece-date {
-  margin-top: .5em; }
-
-.arts-gallery--piece-description {
-  text-aligh: justify;
-  line-height: 1.5em;
-  padding: 1em 0; }
 
 .view-more-section {
   display: block;
@@ -466,8 +457,7 @@ footer {
 
 .view-bar {
   display: block;
-  margin: 0 auto;
-  border: 1px solid #fea900; }
+  margin: 0 auto; }
 
 .arts-gallery--icon {
   margin-left: 0;
@@ -484,9 +474,7 @@ footer {
 
 .arts-gallery--icon {
   position: absolute;
-  margin-top: 1em;
-  transform: translateX(-60px);
-  z-index: -2; }
+  margin-top: 1em; }
 
 @keyframes bounceArrow {
   0% {
@@ -510,7 +498,7 @@ footer {
   .arts-gallery--piece-image {
     float: none;
     width: 100%;
-    padding: 0em; }
+    padding: 1em; }
   .arts-gallery--piece-text {
     float: none;
     width: 100%;
@@ -543,12 +531,15 @@ footer {
   text-align: center; }
 
 .gallery-medium--grid {
+  overflow: auto;
+  width: 90%;
   text-align: center;
   margin: 0 auto;
   padding: 0 0 5em 0; }
 
 .gallery-medium--image-section {
-  display: inline-block;
+  float: left;
+  width: 33.3333%;
   padding: 2em;
   transition: all 0.4s linear; }
   .gallery-medium--image-section:hover {
@@ -562,9 +553,97 @@ footer {
   .gallery-medium-hero {
     padding: 2em 0;
     text-align: center; }
+  .gallery-medium--grid {
+    width: 95%; }
   .gallery-medium--image-section {
-    display: inline-block;
-    padding: 1em; } }
+    position: relative;
+    width: 100%;
+    padding: 1em; }
+  .gallery-medium--image {
+    width: 100%; } }
+
+.gallery-piece--header {
+  padding: .5em 0; }
+
+.gallery-piece--navbar {
+  display: inline-block;
+  overflow: auto;
+  padding: 0 0.5em 0em 0; }
+
+.mobile-gallery-piece--navbar {
+  display: none; }
+
+.gallery-piece--navbar-li {
+  display: inline-block; }
+
+.gallery-piece--link {
+  display: inline-block;
+  padding: 0.5em 0.5em 0.25em 0.5em; }
+
+.gallery-piece--home-icon {
+  margin: 0; }
+
+.gallery-piece--title {
+  display: block;
+  text-align: center;
+  width: 90%;
+  margin: 0 auto;
+  padding: 0.5em 0em 0.5em 0; }
+
+.gallery-piece--title-break {
+  width: 40%;
+  display: block;
+  margin: 0 auto; }
+
+.gallery-main--section {
+  display: block;
+  margin: 0 auto;
+  padding: 2em 0 2em 0; }
+
+.gallery-main--image {
+  display: block;
+  margin: 0 auto; }
+
+.gallery-thumbnail--section {
+  margin: 0 auto;
+  text-align: center; }
+
+.gallery-thumbnail {
+  display: inline-block;
+  padding: 0 0 5em 0; }
+
+.gallery-thumbnail--image {
+  height: 100px;
+  border: .2em solid transparent;
+  transition: all 0.4s linear; }
+
+.gallery-thumbnail--image:hover {
+  border: 0.2em solid #FFB400; }
+
+@media (min-width: 5em) and (max-width: 65em) {
+  .gallery-piece--header {
+    padding: 0; }
+  .mobile-gallery-piece--navbar {
+    display: block;
+    padding: .5em;
+    text-align: center; }
+  .gallery-piece--link {
+    padding: .5em; }
+  .gallery-piece--navbar {
+    display: none; }
+  .gallery-piece--navbar--active {
+    display: block; }
+  .gallery-piece--navbar-li {
+    display: block; }
+  .gallery-piece--menu-icon {
+    margin: 0; }
+  .gallery-main--image {
+    max-width: 752px;
+    width: 100%; }
+  .gallery-thumbnail {
+    padding: 0; }
+  .gallery-thumbnail--section {
+    padding: 0 0 5em 0; } }
 
 .dev-header {
   position: fixed;
@@ -844,7 +923,14 @@ footer {
 
 @media (min-width: 5em) and (max-width: 65em) {
   .arts-header--title {
-    font-size: 3.5em; } }
+    font-size: 3.5em; }
+  .oh-speech-bubble--active {
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 30px; }
+  .oh-speech-bubble--text {
+    font-size: .7em;
+    font-weight: 300; } }
 
 .arts-navbar {
   background-color: white; }
@@ -909,8 +995,11 @@ footer {
 .arts-gallery--icon {
   color: black; }
 
+.view-more-section:hover .icon-chevron-right-circle {
+  color: #fea900; }
+
 .icon-chevron-right-circle {
-  color: #fea900;
+  color: white;
   font-size: 2em;
   transition: all 0.4s linear; }
 
@@ -920,10 +1009,43 @@ footer {
 .arts-gallery--pagebreak {
   border: 7px solid #e7e7e8; }
 
+.view-bar {
+  border: 1px solid #fea900; }
+
 @media (min-width: 5em) and (max-width: 65em) {
   .arts-gallery--piece-description {
     font-size: 1em;
-    line-height: 1.5em; } }
+    line-height: 1.5em; }
+  .icon-chevron-right-circle {
+    color: #fea900;
+    font-size: 2em;
+    transition: all 0.4s linear; } }
+
+.gallery-piece--link {
+  font-size: 1.75em;
+  border-bottom: 3px solid transparent;
+  transition: all 0.4s linear; }
+  .gallery-piece--link:hover {
+    border-bottom: 3px solid #2bffad; }
+
+.gallery-piece--title {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 200;
+  font-size: 2em;
+  letter-spacing: -.1em; }
+
+.gallery-piece--title-break {
+  border: 1px solid #FFB400;
+  border-radius: 50px; }
+
+@media (min-width: 5em) and (max-width: 65em) {
+  .mobile-gallery-piece--navbar {
+    margin: 0;
+    background-color: #4fdfbb; }
+  .gallery-piece--menu-icon {
+    font-size: 1.7em; }
+  .gallery-piece--navbar-li {
+    border-bottom: 1px solid #4fdfbb; } }
 
 .dev-header {
   background-color: #fea900;
@@ -1060,8 +1182,8 @@ footer {
 
 @font-face {
   font-family: 'icomoon';
-  src: url("../fonts/icomoon.eot?3qhc9f");
-  src: url("../fonts/icomoon.eot?3qhc9f#iefix") format("embedded-opentype"), url("../fonts/icomoon.woff2?3qhc9f") format("woff2"), url("../fonts/icomoon.ttf?3qhc9f") format("truetype"), url("../fonts/icomoon.woff?3qhc9f") format("woff"), url("../fonts/icomoon.svg?3qhc9f#icomoon") format("svg");
+  src: url("../fonts/icomoon.eot?cv866l");
+  src: url("../fonts/icomoon.eot?cv866l#iefix") format("embedded-opentype"), url("../fonts/icomoon.woff2?cv866l") format("woff2"), url("../fonts/icomoon.ttf?cv866l") format("truetype"), url("../fonts/icomoon.woff?cv866l") format("woff"), url("../fonts/icomoon.svg?cv866l#icomoon") format("svg");
   font-weight: normal;
   font-style: normal; }
 
@@ -1086,6 +1208,12 @@ footer {
 
 .icon-menu2:before {
   content: "\e92b"; }
+
+.icon-chevron-left:before {
+  content: "\e93b"; }
+
+.icon-menu-circle:before {
+  content: "\e958"; }
 
 .icon-chevron-left-circle:before {
   content: "\e964"; }

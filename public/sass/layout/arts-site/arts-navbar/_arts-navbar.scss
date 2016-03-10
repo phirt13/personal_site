@@ -1,7 +1,4 @@
 .arts-navbar {
-  position: sticky;
-  position: -webkit-sticky;
-  top: 0px;
   overflow: auto;
   padding: 0 .5em 0em 0;
 }
@@ -25,14 +22,25 @@
   margin-bottom: 1em;
 }
 
+.mobile-arts-navbar {
+  display: none;
+}
+
 @media (min-width: 5em) and (max-width: 65em) {
   .arts-navbar {
+    display: none;
     padding: 0;
   }
 
   .arts-navbar--link {
     float: none;
     display: block;
+  }
+
+  .mobile-arts-navbar--active {
+    background-color: white;
+    display: block;
+    text-align: center;
   }
 
   .arts-hero {
