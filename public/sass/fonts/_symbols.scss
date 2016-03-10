@@ -3,12 +3,12 @@
 
 @font-face {
     font-family: 'icomoon';
-    src:    url('../fonts/icomoon.eot?3qhc9f');
-    src:    url('../fonts/icomoon.eot?3qhc9f#iefix') format('embedded-opentype'),
-        url('../fonts/icomoon.woff2?3qhc9f') format('woff2'),
-        url('../fonts/icomoon.ttf?3qhc9f') format('truetype'),
-        url('../fonts/icomoon.woff?3qhc9f') format('woff'),
-        url('../fonts/icomoon.svg?3qhc9f#icomoon') format('svg');
+    src:    url('../fonts/icomoon.eot?cv866l');
+    src:    url('../fonts/icomoon.eot?cv866l#iefix') format('embedded-opentype'),
+        url('../fonts/icomoon.woff2?cv866l') format('woff2'),
+        url('../fonts/icomoon.ttf?cv866l') format('truetype'),
+        url('../fonts/icomoon.woff?cv866l') format('woff'),
+        url('../fonts/icomoon.svg?cv866l#icomoon') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -36,6 +36,12 @@
 }
 .icon-menu2:before {
     content: "\e92b";
+}
+.icon-chevron-left:before {
+    content: "\e93b";
+}
+.icon-menu-circle:before {
+    content: "\e958";
 }
 .icon-chevron-left-circle:before {
     content: "\e964";

@@ -17,31 +17,37 @@
   margin: 0 auto;
 }
 
-.arts-gallery--piece {
-  overflow: auto;
-}
-
 .arts-gallery--piece-image {
-  float: left;
-  width: 50%;
+  display: block;
+  margin: 0 auto;
   padding: 2.5em;
 }
+//_________FOR LATER VERSION W/ DESCRIPTIONS_________________!!
+// .arts-gallery--piece {
+//   overflow: auto;
+// }
 
-.arts-gallery--piece-text {
-  float: left;
-  width: 50%;
-  padding: 2.5em;
-}
+// .arts-gallery--piece-image {
+//   float: left;
+//   width: 50%;
+//   padding: 2.5em;
+// }
 
-.arts-gallery--piece-date {
-  margin-top: .5em;
-}
+// .arts-gallery--piece-text {
+//   float: left;
+//   width: 50%;
+//   padding: 2.5em;
+// }
 
-.arts-gallery--piece-description {
-  text-aligh: justify;
-  line-height: 1.5em;
-  padding: 1em 0;
-}
+// .arts-gallery--piece-date {
+//   margin-top: .5em;
+// }
+
+// .arts-gallery--piece-description {
+//   text-aligh: justify;
+//   line-height: 1.5em;
+//   padding: 1em 0;
+// }
 
 .view-more-section {
   display: block;
@@ -52,8 +58,6 @@
   &:hover .arts-gallery--icon {
     transform: translateX(10px);
     z-index: 0;
-    // animation: bounceArrow 3s linear;
-    // -webkit-animation: bounceArrow 3s linear;
   }
   &:hover {
     cursor: pointer;
@@ -63,16 +67,11 @@
 .view-bar {
   display: block;
   margin: 0 auto;
-  border:1px solid $dev-color;
 }
 
 .arts-gallery--icon {
   margin-left: 0;
   transition: all .4s linear;
-  &:hover {
-    // animation: bounceArrow 3s linear;
-    // -webkit-animation: bounceArrow 2s linear;
-  }
 }
 
 .arts-gallery--view, .arts-gallery--icon {
@@ -89,8 +88,6 @@
 .arts-gallery--icon {
   position: absolute;
   margin-top: 1em;
-  transform: translateX(-60px);
-  z-index: -2;
 }
 
 @keyframes bounceArrow {
@@ -113,7 +110,6 @@
   100% {
     transform: translateX(0px);
   }
-
 }
 
 
@@ -130,7 +126,7 @@
   .arts-gallery--piece-image {
     float: none;
     width: 100%;
-    padding: 0em;
+    padding: 1em;
   }
 
   .arts-gallery--piece-text {

@@ -81,6 +81,18 @@
   .arts-header--title {
     font-size: 3.5em;
   }
+
+  .oh-speech-bubble--active {
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 30px;
+
+  }
+
+  .oh-speech-bubble--text {
+    font-size: .7em;
+    font-weight: 300;
+  }
 }
 // @keyframes fadeIn {
 //   0% {
