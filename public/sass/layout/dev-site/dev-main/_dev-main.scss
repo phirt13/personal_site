@@ -11,13 +11,31 @@
 
 .dev-main--secondary-title {
   padding-top: .5em;
-  margin-top: 2.5em;
+  margin-top: 2em;
+}
+
+.dev-main--title-secondary {
+  margin-top: .5em;
 }
 
 @media (min-width: 5em) and (max-width: 65em) {
   .dev-main {
-    padding: 1em;
+    padding: 0;
     height: auto;
     margin: 0;
+  }
+
+  .dev-main--title {
+    margin-top: 1em;
+    text-align: center;
+  }
+
+  .dev-main--title-secondary {
+    text-align: center;
+    margin-bottom: 1em;
+  }
+
+  .dev-main--pagebreak {
+    margin: .5em 0 2em 0;
   }
 }

@@ -10,7 +10,31 @@
   font-weight: 200;
 }
 
+.dev-main--title-secondary {
+  color: $light-graphite-gray;
+  font-weight: 100;
+  font-size: 2em;
+}
+
 .dev-main--secondary-title {
   font-family: $header-font;
   font-size: 2em;
+}
+
+@media (min-width: 5em) and (max-width: 65em) {
+
+  .dev-main {
+    border-top: 1em solid $dev-color;
+  }
+
+  .dev-main--title {
+    font-size: 2em;
+    font-weight: 200;
+  }
+
+  .dev-main--title-secondary {
+    color: $light-graphite-gray;
+    font-weight: 100;
+    font-size: 1.5em;
+  }
 }
