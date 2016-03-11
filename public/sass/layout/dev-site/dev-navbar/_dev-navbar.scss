@@ -24,6 +24,7 @@
 
 .dev-header--icon {
   padding: .2em;
+  margin-bottom: 1em;
 }
 
 //MOBILE ------------------
@@ -32,6 +33,9 @@
   display: none;
 }
 
+.mobile-icons {
+  display: none;
+}
 
 @media (min-width: 5em) and (max-width: 65em) {
   .dev-navbar {
@@ -56,6 +60,7 @@
 
   .mobile-icons {
     overflow: auto;
+    display: block;
     padding: .5em;
     margin-bottom: 2em;
   }
