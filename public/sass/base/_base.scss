@@ -16,7 +16,7 @@ body{
 }
 
 @media (min-width: 5em) and (max-width: 65em) {
-  base {
+  body {
     font-weight: 200;
   }
   body:not(.dev-body) {
