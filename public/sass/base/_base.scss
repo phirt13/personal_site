@@ -16,6 +16,9 @@ body{
 }
 
 @media (min-width: 5em) and (max-width: 65em) {
+  body {
+    font-weight: 200;
+  }
   body:not(.dev-body) {
     border: none;
   }
