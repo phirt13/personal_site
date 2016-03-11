@@ -25,14 +25,3 @@ $(function() {
 
 });
 
-// (function() {
-
-//   var menuIcon = document.getElementById('menu-close');
-//   var devNavbar = document.getElementById('mobile-dev-navbar');
-
-//   var toggleLight = 'green';
-
-//   menuIcon.addEventListener('click', function() {
-//     devNavbar.setAttribute('class', )
-//   })
-// })

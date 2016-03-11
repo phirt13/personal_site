@@ -19,8 +19,75 @@
 .dev-main--secondary-title {
   font-family: $header-font;
   font-size: 2em;
+  font-weight: 200;
 }
 
+.dev-info--p {
+  font-size: 1.5em;
+  line-height: 1.5em;
+}
+
+.skill-section {
+  background-color: #e7e7e8;
+}
+
+.skill-title {
+  font-size: 1.7em;
+  font-weight: 300;
+  background-color: white;
+  border-bottom: 3px solid $artist-color;
+}
+
+.skill-list {
+  font-size: 1.5em;
+}
+
+.project-title {
+  font-size: 1.7em;
+  font-weight: 200;
+}
+
+.title-break {
+  border: 1.5px solid $artist-color;
+  border-radius: 5px;
+}
+
+.project-icon--section {
+  &:hover {
+    cursor: pointer;
+  }
+  &:hover .project-icon {
+    color: $dark-graphite-gray;
+    transform: scale(1.2);
+  }
+}
+
+.project-icon--section {
+  &:hover .icon-label {
+    color: $dark-graphite-gray;
+    transform: scale(1.1);
+  }
+}
+
+.project-icon {
+  font-size: 4.5em;
+  color: $light-graphite-gray;
+  transition: all .4s linear;
+}
+
+.icon-label {
+  font-size: 1.2em;
+  font-weight: 100;
+  transition: all .4s linear;
+}
+
+.ellen-link {
+  color: #fe3293;
+  font-weight: 200;
+  &:visited {
+    color: #fe3293;
+  }
+}
 @media (min-width: 5em) and (max-width: 65em) {
 
   .dev-main {
@@ -28,13 +95,13 @@
   }
 
   .dev-main--title {
-    font-size: 2em;
+    font-size: 2.5em;
     font-weight: 200;
   }
 
   .dev-main--title-secondary {
     color: $darkest-graphite-gray;
     font-weight: 200;
-    font-size: 1.5em;
+    font-size: 2em;
   }
 }
