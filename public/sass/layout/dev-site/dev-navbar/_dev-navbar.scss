@@ -1,5 +1,5 @@
 .dev-navbar {
-  margin-top: 8em;
+  margin-top: 1em;
 }
 
 .dev-navbar--list {
@@ -22,9 +22,57 @@
   }
 }
 
+.dev-header--icon {
+  padding: .2em;
+  margin-bottom: 1em;
+}
+
+//MOBILE ------------------
+
+.mobile-dev-navbar--section-hidden {
+  display: none;
+}
+
+.mobile-icons {
+  display: none;
+}
+
 @media (min-width: 5em) and (max-width: 65em) {
   .dev-navbar {
     display: none;
-    margin-right: 1em;
+    // margin-right: 1em;
+  }
+
+//MOBILE ------------------
+
+  .mobile-dev-navbar--section {
+    display: block;
+    text-align: center;
+  }
+
+  .mobile-dev-navbar--list {
+    padding: .5em;
+  }
+
+  .mobile-dev-navbar--list-middle {
+    padding: .5em;
+  }
+
+  .mobile-icons {
+    overflow: auto;
+    display: block;
+    padding: .5em;
+    margin-bottom: 2em;
+  }
+  .dev-header--icon {
+    float: left;
+    padding: 0;
+    margin: 0 0 0 .2em;
+  }
+
+  .dev-header--icon-menu-close {
+    float: right;
+    margin: 0 .2em 0 0;
+    padding: 0;
   }
 }

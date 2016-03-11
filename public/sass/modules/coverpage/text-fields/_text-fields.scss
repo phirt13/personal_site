@@ -7,6 +7,28 @@
   font-size: 1.5em;
 }
 
+.coverpage-paragraph--text-center {
+    font-family: $header-font;
+    font-size: 2em;
+    font-weight: 200;
+    color: $dark-graphite-gray;
+}
+
+.coverpage--dev-link {
+  color: $dev-color;
+  font-weight: 200;
+  &:visited {
+    color: $dev-color;
+  }
+}
+
+.coverpage--arts-link {
+  color: $artist-color;
+  font-weight: 200;
+  &:visited {
+    color: $artist-color;
+  }
+}
 @media (min-width: 5em) and (max-width: 65em) {
   .coverpage-paragraph--text {
     font-size: 1em;

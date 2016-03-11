@@ -10,6 +10,7 @@
 <!-- CSS
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <link rel="stylesheet" href="css/application.css">
+    <link rel="shortcut icon" href="pics/favicon.ico" />
   </head>
 
 <!-- CONTENT
@@ -17,8 +18,10 @@
   <body class="dev-body">
 
     <header class="dev-header" role="banner">
-<!--       <p class="dev-header--icon"><span class="icon-target"</span></p> -->
       <nav class="dev-navbar">
+        <a href="index.html">
+          <p class="dev-header--icon"><span class="icon-home2"</span></p>
+        </a>
         <ul>
           <!-- fix the classes here this is not good text align works but should only be applied to the li element-->
           <div class="dev-navbar--div-outer">
@@ -47,14 +50,18 @@
           </li> -->
         </ul>
       </nav>
-      <section class="mobile-dev-navbar--section-hidden">
+    </header>
+    <main class="dev-main" role="main">
+      <h1 class="dev-main--title"><a id="art-title" href="index.html">ALEX HIRT</a></h1>
+      <h2 class="dev-main--title-secondary">Front End Developer</h1>
+      <section id="mobile-dev-nav" class="mobile-dev-navbar--section-hidden">
         <nav class="mobile-dev-navbar">
           <ul>
             <a class="mobile-dev-navbar--link" href="#skills">
               <li class="mobile-dev-navbar--list">Skills</li>
             </a>
             <a class="mobile-dev-navbar--link" href="#projects">
-              <li class="mobile-dev-navbar--list">Projects</li>
+              <li class="mobile-dev-navbar--list-middle">Projects</li>
             </a>
             <a class="mobile-dev-navbar--link" href="#about">
               <li class="mobile-dev-navbar--list">About Me</li>
@@ -62,19 +69,18 @@
           </ul>
         </nav>
       </section>
-    </header>
-
-    <main class="dev-main" role="main">
-      <h1 class="dev-main--title"><a id="art-title" href="index.html">Alex Hirt</a></h1>
+      <section class="mobile-icons">
+        <a href="index.html">
+          <p class="dev-header--icon"><span class="icon-home2"</span></p>
+        </a>
+        <p class="dev-header--icon-menu-close"><span id="menu-close" class="icon-menu2"</span></p>
+      </section>
       <hr class="dev-main--pagebreak">
       <section class="dev-info--p">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam congue tortor eget pulvinar lobortis.
-        Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nam ac dolor augue.
-        Pellentesque mi mi, laoreet et dolor sit amet, ultrices varius risus. Nam vitae iaculis elit.
-        Aliquam mollis interdum libero. Sed sodales placerat egestas. Vestibulum ut arcu aliquam purus viverra dictum vel sit amet mi.
-        Duis nisl mauris, aliquam sit amet luctus eget, dapibus in enim. Sed velit augue, pretium a sem aliquam, congue porttitor tortor.
-        Sed tempor nisl a lorem consequat, id maximus erat aliquet. Sed sagittis porta libero sed condimentum.
-        Aliquam finibus lectus nec ante congue rutrum. Curabitur quam quam, accumsan id ultrices ultrices, tempor et tellus.</p>
+        <p>With the power of HTML, JavaScript, and CSS,  I create beautiful and responsive front-end experiences with an emphasis on clear and efficient design.  I work diligently to make unique interfaces that balance form and functionality.</p>
+        <p>I believe strongly that memorable web experiences are created by pairing precise strategy with divergent thinking.</p>
+
+        <p>During development, I know how to source the information I need to move projects forward.   My process gravitates towards detail and intricacy.  I am a perfectionist as well as an ambitious maker; I strive to push my boundaries while still preserving excellence in craft.  I embrace and learn from my failures.</p>
       </section>
 
       <section class="dev-skills">
@@ -129,7 +135,7 @@
     </main>
 
     <footer class="dev-footer" role="contentinfo">
-      <p>Hello</p>
+      <p class="footer-copywright">Copyright Alex Hirt 201. All rights rserved.</p>
     </footer>
 
   </body>
@@ -139,5 +145,5 @@
 <!-- Check for updated on google developers -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 <script src="js/navigation.js"></script>
-
+<script src="js/mobile-dev-navbar.js"></script>
 </html>
