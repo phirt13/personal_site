@@ -1310,12 +1310,11 @@ footer {
     width: 100%; }
   .mobile-dev-navbar--list {
     font-size: 1.7em;
-    border-bottom: 1px solid #78787a;
     background-color: white; }
-  .mobile-dev-navbar--list--top {
-    font-size: 2.5em;
-    border-bottom: 1px solid #78787a;
-    background-color: white; }
+  .mobile-dev-navbar--list:not(#list-0) {
+    border-top: 1px solid #78787a; }
+  #list-0 {
+    font-size: 2.5em; }
   .mobile-icons {
     background-color: #78787a; }
   .dev-header--icon {

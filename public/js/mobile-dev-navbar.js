@@ -2,10 +2,13 @@ $(function() {
 
   var $menuIcon = $('#menu-close');
   var $artNavbar = $('#mobile-dev-nav');
+  var $navBarList = $('.mobile-dev-navbar--list');
+
+  console.log($navBarList);
 
   var toggleLight = 'green';
 
-  $menuIcon.click(function() {
+  function toggleShowMenu() {
     if (toggleLight === 'green') {
       $artNavbar.attr('class', 'mobile-dev-navbar--section');
       $menuIcon.attr('class', 'icon-cross2');
@@ -21,7 +24,15 @@ $(function() {
     } else {
       console.log('Not Working');
     }
+  }
+
+  $menuIcon.click(function() {
+    toggleShowMenu();
   });
+
+  $navBarList.click(function() {
+    toggleShowMenu();
+  })
 
 });
 
