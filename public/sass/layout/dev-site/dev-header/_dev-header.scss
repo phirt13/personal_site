@@ -20,6 +20,10 @@
 
 //fix the classes on the html and sass
 @media (min-width: 5em) and (max-width: 65em) {
+  .dev-body {
+   border: none;
+  }
+
   .dev-header {
     position: relative;
     display: block;

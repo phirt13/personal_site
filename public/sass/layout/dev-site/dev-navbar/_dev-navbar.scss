@@ -44,6 +44,9 @@
   }
 
 //MOBILE ------------------
+  .fixed-dev-nav {
+    position: fixed;
+  }
 
   .mobile-dev-navbar--section {
     display: block;
@@ -51,6 +54,10 @@
   }
 
   .mobile-dev-navbar--list {
+    padding: .5em;
+  }
+
+  .mobile-dev-navbar--list--top {
     padding: .5em;
   }
 

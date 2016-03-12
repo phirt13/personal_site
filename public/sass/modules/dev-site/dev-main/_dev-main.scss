@@ -75,6 +75,10 @@
   transition: all .4s linear;
 }
 
+.project-description {
+  font-size: 1.2em;
+}
+
 .icon-label {
   font-size: 1.2em;
   font-weight: 100;
@@ -89,9 +93,12 @@
   }
 }
 @media (min-width: 5em) and (max-width: 65em) {
+  .dev-section {
+    padding: .2em 0 0 0;
+  }
 
   .dev-main {
-    border-top: 1em solid $dev-color;
+    border-top: 5em solid $dev-color;
   }
 
   .dev-main--title {

@@ -15,8 +15,7 @@
 
 <!-- CONTENT
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <body class="dev-body">
-
+  <body id="top" class="dev-body">
     <header class="dev-header" role="banner">
       <nav class="dev-navbar">
         <a href="index.html">
@@ -40,48 +39,53 @@
           </div>
           <div class="dev-navbar--div-outer">
             <div class="dev-navbar--div-inner">
-              <a class="dev-navbar--link" href="#about">
-                <li class="dev-navbar--list">About Me</li>
+              <a class="dev-navbar--link" href="#contact">
+                <li class="dev-navbar--list">Contact</li>
               </a>
             </div>
           </div>
           <div class="dev-navbar--div-outer">
             <div class="dev-navbar--div-inner">
-              <a class="dev-navbar--link" href="#contact">
-                <li class="dev-navbar--list">Contact</li>
+              <a class="dev-navbar--link" href="#about">
+                <li class="dev-navbar--list">About Me</li>
               </a>
             </div>
           </div>
         </ul>
       </nav>
     </header>
+      <section class="fixed-dev-nav">
+        <section id="mobile-dev-nav" class="mobile-dev-navbar--section-hidden">
+          <nav class="mobile-dev-navbar">
+            <ul>
+              <a class="mobile-dev-navbar--link" href="#top">
+                <li class="mobile-dev-navbar--list--top"><p><span class="icon-chevron-up-circle"></span></p></li>
+              </a>
+              <a class="mobile-dev-navbar--link" href="#skills">
+                <li class="mobile-dev-navbar--list">Skills</li>
+              </a>
+              <a class="mobile-dev-navbar--link" href="#projects">
+                <li class="mobile-dev-navbar--list">Projects</li>
+              </a>
+              <a class="mobile-dev-navbar--link" href="#about">
+                <li class="mobile-dev-navbar--list">About Me</li>
+              </a>
+              <a class="mobile-dev-navbar--link" href="#contact">
+                <li class="mobile-dev-navbar--list">Contact</li>
+              </a>
+            </ul>
+          </nav>
+        </section>
+        <section class="mobile-icons">
+          <a href="index.html">
+            <p class="dev-header--icon"><span class="icon-home2"></span></p>
+          </a>
+          <p class="dev-header--icon-menu-close"><span id="menu-close" class="icon-menu2"></span></p>
+        </section>
+      </section>
     <main class="dev-main" role="main">
       <h1 class="dev-main--title"><a id="art-title" href="index.html">ALEX HIRT</a></h1>
       <h2 class="dev-main--title-secondary">Front End Developer</h1>
-      <section id="mobile-dev-nav" class="mobile-dev-navbar--section-hidden">
-        <nav class="mobile-dev-navbar">
-          <ul>
-            <a class="mobile-dev-navbar--link" href="#skills">
-              <li class="mobile-dev-navbar--list">Skills</li>
-            </a>
-            <a class="mobile-dev-navbar--link" href="#projects">
-              <li class="mobile-dev-navbar--list">Projects</li>
-            </a>
-            <a class="mobile-dev-navbar--link" href="#about">
-              <li class="mobile-dev-navbar--list">About Me</li>
-            </a>
-            <a class="mobile-dev-navbar--link" href="#contact">
-              <li class="mobile-dev-navbar--list">Contact</li>
-            </a>
-          </ul>
-        </nav>
-      </section>
-      <section class="mobile-icons">
-        <a href="index.html">
-          <p class="dev-header--icon"><span class="icon-home2"></span></p>
-        </a>
-        <p class="dev-header--icon-menu-close"><span id="menu-close" class="icon-menu2"></span></p>
-      </section>
       <hr class="dev-main--pagebreak">
       <section class="dev-info">
         <p class="dev-info--p">With the power of HTML, JavaScript, and CSS,  I create beautiful and responsive front-end experiences with an emphasis on clear and efficient design.  I work diligently to make unique interfaces that balance form and functionality.</p>
@@ -89,49 +93,50 @@
 
         <p class="dev-info--p">During development, I know how to source the information I need to move projects forward.   My process gravitates towards detail and intricacy.  I am a perfectionist as well as an ambitious maker; I strive to push my boundaries while still preserving excellence in craft.  I embrace and learn from my failures.</p>
       </section>
-
-      <section class="dev-skills">
-        <h2 id="skills" class="dev-main--secondary-title">Skills</h2>
-        <hr class="dev-main--pagebreak">
-        <section class="skill-grid">
-          <section class="skill-section">
-            <h3 class="skill-title">Advanced</h3>
-            <p class="skill-list">HTML5</p>
-            <p class="skill-list">CSS</p>
-            <p class="skill-list">SASS</p>
-            <p class="skill-list">Github</p>
-            <p class="skill-list">Responsive Design</p>
+      <section id="skills" class="dev-section">
+        <section class="dev-skills">
+          <h2 class="dev-main--secondary-title">Skills</h2>
+          <hr class="dev-main--pagebreak">
+          <section class="skill-grid">
+            <section class="skill-section">
+              <h3 class="skill-title">Advanced</h3>
+              <p class="skill-list">HTML5</p>
+              <p class="skill-list">CSS</p>
+              <p class="skill-list">SASS</p>
+              <p class="skill-list">Github</p>
+              <p class="skill-list">Responsive Design</p>
+            </section>
           </section>
-        </section>
-        <section class="skill-grid">
-          <section class="skill-section">
-            <h3 class="skill-title">Intermediate</h3>
-            <p class="skill-list">JavaScript</p>
-            <p class="skill-list">jQuery</p>
-            <p class="skill-list">Angular.js</p>
-            <p class="skill-list">Gulp.js</p>
+          <section class="skill-grid">
+            <section class="skill-section">
+              <h3 class="skill-title">Intermediate</h3>
+              <p class="skill-list">JavaScript</p>
+              <p class="skill-list">jQuery</p>
+              <p class="skill-list">Angular.js</p>
+              <p class="skill-list">Gulp.js</p>
+            </section>
           </section>
-        </section>
-        <section class="skill-grid">
-          <section class="skill-section">
-            <h3 class="skill-title">Basic</h3>
-            <p class="skill-list">Node.js</p>
-            <p class="skill-list">Express</p>
-            <p class="skill-list">Photoshop</p>
-            <p class="skill-list">Illustrator</p>
+          <section class="skill-grid">
+            <section class="skill-section">
+              <h3 class="skill-title">Basic</h3>
+              <p class="skill-list">Node.js</p>
+              <p class="skill-list">Express</p>
+              <p class="skill-list">Photoshop</p>
+              <p class="skill-list">Illustrator</p>
+            </section>
           </section>
-        </section>
-        <section class="skill-grid">
-          <section class="skill-section">
-            <h3 class="skill-title">Experience</h3>
-            <p class="skill-list">React.js</p>
-            <p class="skill-list">p5.js</p>
+          <section class="skill-grid">
+            <section class="skill-section">
+              <h3 class="skill-title">Experience</h3>
+              <p class="skill-list">React.js</p>
+              <p class="skill-list">p5.js</p>
+            </section>
           </section>
         </section>
       </section>
 
-      <section class="dev-projects">
-        <h2 id="projects" class="dev-main--secondary-title">Projects</h2>
+      <section id="projects" class="dev-section">
+        <h2 class="dev-main--secondary-title">Projects</h2>
         <hr class="dev-main--pagebreak">
         <section class="project-grid">
           <section class="project-section">
@@ -140,8 +145,9 @@
           <section class="project-section">
             <h3 class="project-title">Bibliopile</h3>
             <hr class="title-break"/>
+            <p class="project-description">Book lending library for requesting and lending books.  Log in to Facebook, post books, and make request</p>
             <section class="project-icon--main">
-                <a href="github.com/davschne/friending-library">
+                <a href="https://github.com/phirt13/friending-library">
                 <section class="project-icon--section">
                   <p class="project-icon"><span class="icon-mark-github"></span></p>
                   <p class="icon-label">Github</p>
@@ -163,14 +169,15 @@
           <section class="project-section">
             <h3 class="project-title">Fuzzle</h3>
             <hr class="title-break"/>
+            <p class="project-description">A Meetup platform for Seattle tennis players.  Find courts, find players, and play tennis!</p>
               <section class="project-icon--main">
-                <a href="github.com/lukegabrieli/fuzzle">
+                <a href="https://github.com/phirt13/fuzzle">
                 <section class="project-icon--section">
                   <p class="project-icon"><span class="icon-mark-github"></span></p>
                   <p class="icon-label">Github</p>
                 </section>
                 </a>
-                <a href="fuzzle.herokuapp.com">
+                <a href="https://fuzzle.herokuapp.com/">
                 <section class="project-icon--section">
                   <p class="project-icon"><span class="icon-earth"></span></p>
                   <p class="icon-label">Website</p>
@@ -186,14 +193,15 @@
           <section class="project-section">
             <h3 class="project-title">Project-Knittable</h3>
             <hr class="title-break"/>
+            <p class="project-description">Create custom sweaters templates from scratch.  Choose from a variety of patterns.</p>
             <section class="project-icon--main">
-                <a href="github.com/phirt13/project_knittable">
+                <a href="https://github.com/phirt13/project_knittable">
                 <section class="project-icon--section">
                   <p class="project-icon"><span class="icon-mark-github"></span></p>
                   <p class="icon-label">Github</p>
                 </a>
                 </section>
-                <a href="http://project-knittable.herokuapp.com/">
+                <a href="https://project-knittable.herokuapp.com/">
                 <section class="project-icon--section">
                   <p class="project-icon"><span class="icon-earth"></span></p>
                   <p class="icon-label">Website</p>
@@ -209,14 +217,15 @@
           <section class="project-section">
             <h3 class="project-title">Portfolio Site</h3>
             <hr class="title-break"/>
+            <p class="project-description">The portfolio site your are currently on.</p>
             <section class="project-icon--main">
-                <a href="github.com/phirt13/personal_site">
+                <a href="https://github.com/phirt13/personal_site">
                 <section class="project-icon--section">
                   <p class="project-icon"><span class="icon-mark-github"></span></p>
                   <p class="icon-label">Github</p>
                 </section>
                 </a>
-                <a href="alexhirt.com">
+                <a href="http://www.alexhirt.com">
                 <section class="project-icon--section">
                   <p class="project-icon"><span class="icon-earth"></span></p>
                   <p class="icon-label">Website</p>
@@ -227,8 +236,43 @@
         </section>
       </section>
 
-      <section class="dev-about">
-        <h2 id="about" class="dev-main--secondary-title">About Me</h2>
+
+
+      <section id="contact" class="dev-section">
+        <h2 class="dev-main--secondary-title">Contact</h2>
+        <hr class="dev-main--pagebreak">
+          <p class="dev-info--p">Please get in touch with me to discuss any opportunities.</p>
+          <p class="dev-info--p">I look forward to hearing from you!</p>
+        <section class="dev-contact">
+          <a href="pics/alexhirt_resume.pdf">
+            <section class="dev-contact-resume">
+              <p class="coverpage-icon"><span class="icon-document"></span></p>
+              <h3 class="dev-contact-header">View Resume</h3>
+            </section>
+          </a>
+          <a href="mailto:ahirt90@gmail.com">
+            <section class="dev-contact-email">
+              <p class="coverpage-icon"><span class="icon-pencil"></span></p>
+              <h3 class="dev-contact-header">Send A Message</h3>
+            </section>
+          </a>
+          <a href="https://github.com">
+            <section class="dev-contact-github">
+              <p class="coverpage-icon"><span class="icon-mark-github"></span></p>
+              <h3 class="dev-contact-header">Checkout Github</h3>
+            </section>
+          </a>
+          <a href="https://www.linkedin.com/in/pahirt" target="_blank">
+            <section class="dev-contact-linkedin">
+            <p class="coverpage-icon"><span class="icon-linkedin"</span></p>
+            <h3 class="dev-contact-header">Look At LinkedIn</h3>
+            </section>
+          </a>
+        </section>
+      </section>
+
+      <section id="about" class="dev-section">
+        <h2 class="dev-main--secondary-title">About Me</h2>
         <hr class="dev-main--pagebreak">
         <img class="my-pic" src="pics/portrait.jpg">
         <p class="dev-info--p">Hi! I currently reside in Austin, TX with my girlfriend <a class="ellen-link" href="http://www.ellenmdick.com/">Ellen Dick</a> who is a seriously kickass glassblower--check her out!</p>
@@ -237,32 +281,11 @@
         <p class="dev-info--p">I also love most food, especially BBQ and sushi.</p>
       </section>
 
-      <section class="dev-contact">
-        <h2 id="contact" class="dev-main--secondary-title">Contact</h2>
-        <hr class="dev-main--pagebreak">
-        <p class="dev-info--p">Please get in touch with me to discuss any opportunities.</p>
-        <p class="dev-info--p">I look forward to hearing from you!</p>
-        <section class="contact">
-          <a href="pics/alexhirt_resume.pdf">
-            <section class="contact-resume">
-              <p class="coverpage-icon"><span class="icon-document"></span></p>
-              <h3 class="contact-header">View Resume</h3>
-            </section>
-          </a>
-          <a href="mailto:ahirt90@gmail.com">
-            <section class="contact-email">
-              <p class="coverpage-icon"><span class="icon-pencil"></span></p>
-              <h3 class="contact-header">Send A Message</h3>
-            </section>
-          </a>
-          <a href="https://www.linkedin.com/in/pahirt" target="_blank">
-            <section class="contact-linkedin">
-            <p class="coverpage-icon"><span class="icon-linkedin"</span></p>
-            <h3 class="contact-header">Checkout LinkedIn</h3>
-            </section>
-          </a>
+      <a href="#top">
+        <section class="scroll-up">
+          <p class="scroll-up--icon"><span class="icon-chevron-up"></span></p>
         </section>
-      </section>
+      </a>
     </main>
 
     <footer class="dev-footer" role="contentinfo">

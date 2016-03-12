@@ -50,9 +50,21 @@
 @media (min-width: 5em) and (max-width: 65em) {
 
 //MOBILE ------------------
+  .fixed-dev-nav {
+    margin: 0;
+    width: 100%;
+  }
+
   .mobile-dev-navbar--list {
     font-size: 1.7em;
     border-bottom: 1px solid $slate-gray;
+    background-color: white;
+  }
+
+  .mobile-dev-navbar--list--top {
+    font-size: 2.5em;
+    border-bottom: 1px solid $slate-gray;
+    background-color: white;
   }
 
   .mobile-icons {
