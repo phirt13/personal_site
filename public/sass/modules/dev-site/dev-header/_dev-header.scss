@@ -1,6 +1,6 @@
 .dev-header {
   background-color: $dev-color;
-  background-image: url('../pics/cropped-bw.jpg'), linear-gradient(90deg, $dev-color 10%, $dev-color 90%);;
+  background-image: linear-gradient(180deg, white 10%, $dev-color 90%);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
