@@ -1,7 +1,7 @@
 .dev-contact {
   overflow: auto;
   text-align: center;
-  padding: 3em 0;
+  padding: 3em 0 0 0;
   .title {
     text-align: center;
     margin-bottom: 1em;
@@ -15,7 +15,7 @@
 
 @media (min-width: 5em) and (max-width: 65em) {
   .dev-contact {
-    padding: 2em 0;
+    padding: 2em 0 0 0;
     .title {
       margin: 0;
     }
