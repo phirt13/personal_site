@@ -11,10 +11,10 @@
   }
 
   .dev-contact-email, .dev-contact-resume, .dev-contact-linkedin, .dev-contact-github {
-    border-top: 1px solid transparent;
+    border-top: 2px solid transparent;
     transition: all .4s linear;
     &:hover {
-      border-top: 1px solid $dark-graphite-gray;
+      border-top: 2px solid $artist-color;
       cursor: pointer;
     }
     &:hover .coverpage-icon {
@@ -42,9 +42,9 @@
       }
     }
     .dev-contact-email, .dev-contact-linkedin, .dev-contact-github, .dev-contact-resume {
-      border-top: 1px solid $light-graphite-gray;
+      border-top: 2px solid $artist-color;
       &:hover {
-        border-top: 1px solid $dark-graphite-gray;
+        border-top: 2px solid $artist-color;
         cursor: pointer;
       }
       &:hover .coverpage-icon {

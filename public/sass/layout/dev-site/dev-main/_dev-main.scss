@@ -101,12 +101,16 @@
   line-height: 1.1em;
 }
 
-.project-description--responsibilities {
+.project-description--responsibilities, .project-description--technologies, .project-description--browse {
   display: block;
   line-height: 1.1em;
   width: 80%;
   margin: 0 auto;
   margin-top: .5em;
+}
+
+.project-description--technologies, .project-description--browse {
+  margin-top: 2.5em;
 }
 
 .title-break {
@@ -188,11 +192,15 @@
     width: 80%;
   }
 
-  .project-description--responsibilities {
+  .project-description--responsibilities, .project-description--technologies, .project-description--browse {
     text-align: center;
     width: 90%;
     margin: 0 auto;
     margin-top: .5em;
+  }
+
+  .project-description--technologies, .project-description--browse {
+    margin-top: 2em;
   }
 
   .project-image {
