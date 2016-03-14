@@ -49,40 +49,7 @@ footer {
     font-size: $default-em * 2;
   }
 }
-// button {
-//   font-size: $default-em;
-//   color: $texas-sky-blue;
-//   background-color: transparent;
-//   border: .1em solid $texas-sky-blue;
-//   &:focus {
-//     outline: none;
-//   }
-// }
 
-// input {
-//   background-color: $creamy-white;
-//   border: .1em solid $creamy-white;
-//   color: $dev-color;
-//   &:focus {
-//     outline:none;
-//     background-color: $creamy-white;
-//     border: .2em solid $texas-sky-blue;
-//     color: $dev-color;
-//   }
-// }
-
-// input[type='radio'] {
-//   -webkit-appearance: none;
-//   height: $default-em * 1.25;
-//   width: $default-em * 1.25;
-//   border: .2em double white;
-//   border-radius: 50%;
-//   transition: background-color .2s linear;
-//   &:hover {
-//     cursor: pointer;
-//     background-color: $texas-sky-blue;
-//   }
-//   &:focus {
-//     outline: none;
-//   }
-// }
+.bolder {
+  font-weight: 300;
+}

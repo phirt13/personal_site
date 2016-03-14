@@ -95,9 +95,18 @@
   display: block;
   margin: 0 auto;
   margin-top: .5em;
+  margin-bottom: 1em;
   text-align: center;
-  width: 80%;
+  width: 60%;
   line-height: 1.1em;
+}
+
+.project-description--responsibilities {
+  display: block;
+  line-height: 1.1em;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: .5em;
 }
 
 .title-break {
@@ -173,6 +182,17 @@
     display: block;
     width: 100%;
     padding: 1em;
+  }
+
+  .project-description {
+    width: 80%;
+  }
+
+  .project-description--responsibilities {
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: .5em;
   }
 
   .project-image {
