@@ -1,11 +1,16 @@
+.dev-body {
+  position: relative;
+  max-width: 1920px;
+}
+
 .scroll-up {
-  position: fixed;
-  top: 50%;
-  left: 94.5%;
+  float: right;
+  margin-top: 50%;
   background-color: $body-gray;
-  width: 5%;
-  padding: 1em 0;
+  width: 25%;
+  padding: 1em;
   font-size: 1.2em;
+  transform: translateX(5em);
   &:hover {
     cursor: pointer;
   }
