@@ -9,6 +9,7 @@ $(function() {
   var $thumbnailSeven = $('#thumbnail-6');
   var $thumbnailEight = $('#thumbnail-7');
   var $thumbnailNine = $('#thumbnail-8');
+  var $thumbnailTen = $('#thumbnail-9');
 
 
   var pictures = [
@@ -71,8 +72,13 @@ $(function() {
     counter = 8;
   });
 
+  $thumbnailTen.click(function() {
+    $mainImage.attr('src', pictures[9]);
+    counter = 9;
+  });
+
   $mainImage.click(function() {
-    if(counter >= 8) {
+    if(counter >= 9) {
       counter = 0;
       $mainImage.attr('src', pictures[counter]);
     } else {
