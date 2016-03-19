@@ -6,20 +6,14 @@ $(function() {
   var $thumbnailFour = $('#thumbnail-3');
   var $thumbnailFive = $('#thumbnail-4');
   var $thumbnailSix = $('#thumbnail-5');
-  var $thumbnailSeven = $('#thumbnail-6');
-  var $thumbnailEight = $('#thumbnail-7');
-  var $thumbnailNine = $('#thumbnail-8');
 
   var pictures = [
-    'pics/art/oros/regular/oros-1.jpg',
-    'pics/art/oros/regular/oros-2.jpg',
-    'pics/art/oros/regular/oros-3.jpg',
-    'pics/art/oros/regular/oros-4.jpg',
-    'pics/art/oros/regular/oros-5.jpg',
-    'pics/art/oros/regular/oros-6.jpg',
-    'pics/art/oros/regular/oros-7.jpg',
-    'pics/art/oros/regular/oros-8.jpg',
-    'pics/art/oros/regular/oros-9.jpg'
+    'pics/art/bonsai/regular/bonsai-1.jpg',
+    'pics/art/bonsai/regular/bonsai-2.jpg',
+    'pics/art/bonsai/regular/bonsai-3.jpg',
+    'pics/art/bonsai/regular/bonsai-4.jpg',
+    'pics/art/bonsai/regular/bonsai-5.jpg',
+    'pics/art/bonsai/regular/bonsai-6.jpg',
   ];
 
   var counter = 0;
@@ -54,23 +48,8 @@ $(function() {
     counter = 5;
   });
 
-  $thumbnailSeven.click(function() {
-    $mainImage.attr('src', pictures[6]);
-    counter = 6;
-  });
-
-  $thumbnailEight.click(function() {
-    $mainImage.attr('src', pictures[7]);
-    counter = 7;
-  });
-
-  $thumbnailNine.click(function() {
-    $mainImage.attr('src', pictures[8]);
-    counter = 8;
-  });
-
   $mainImage.click(function() {
-    if(counter >= 8) {
+    if(counter >= 5) {
       counter = 0;
       $mainImage.attr('src', pictures[counter]);
     } else {
