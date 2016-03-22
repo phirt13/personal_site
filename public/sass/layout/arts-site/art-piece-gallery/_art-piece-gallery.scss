@@ -40,9 +40,17 @@
 }
 
 .gallery-main--section {
+  position: relative;
   display: block;
   margin: 0 auto;
+  max-width: 752px;
   padding: 2em 0 2em 0;
+  &:hover {
+    #cycle-image-banner {
+      opacity: 0;
+      z-index: -1;
+    }
+  }
 }
 
 .gallery-main--image {
@@ -70,6 +78,23 @@
   border: .2em solid $light-orange;
 }
 
+.image-banner {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  font-size: 2em;
+  padding: 1em 0;
+  color: black;
+  background-color: white;
+  opacity: .6;
+  z-index: 10;
+  transition: all 1s linear;
+  &.hidden {
+    opacity: 0;
+    z-index: -1;
+  }
+}
+
 @media (min-width: 5em) and (max-width: 65em) {
   .gallery-piece--header {
     padding: 0;
@@ -84,7 +109,6 @@
   .gallery-piece--link {
     padding: .5em;
   }
-
 
   .gallery-piece--navbar {
     display: none;
