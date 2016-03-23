@@ -3,6 +3,16 @@
   max-width: 1920px;
 }
 
+// .dev-header {
+//   &:hover {
+//     .scroll-up {
+//       transform: translateX(0em);
+//     }
+//   }
+// }
+
+
+
 .scroll-up {
   float: right;
   margin-top: 50%;
@@ -10,12 +20,16 @@
   width: 25%;
   padding: 1em;
   font-size: 1.2em;
-  transform: translateX(0em);
+  transform: translateX(5em);
+  transition: all .4s linear;
   &:hover {
     cursor: pointer;
   }
   &:hover .scroll-up--icon {
-    transform: translatey(-5px);
+    transform: translateY(-5px);
+  }
+  &.scroll-up--active {
+    transform: translateX(0em);
   }
 }
 

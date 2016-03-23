@@ -10,7 +10,6 @@ $(function() {
   $(window).scroll(changeClass);
   $mainImage.click(changeClass);
 
-
   (function checkWindow() {
     if(window.innerWidth >= 320 && window.innerWidth <= 1040) {
       console.log('this is small' + window.innerWidth);
