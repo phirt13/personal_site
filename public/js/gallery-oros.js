@@ -11,15 +11,15 @@ $(function() {
   var $thumbnailNine = $('#thumbnail-8');
 
   var pictures = [
-    'pics/art/oros/regular/oros-1.jpg',
-    'pics/art/oros/regular/oros-2.jpg',
-    'pics/art/oros/regular/oros-3.jpg',
-    'pics/art/oros/regular/oros-4.jpg',
-    'pics/art/oros/regular/oros-5.jpg',
-    'pics/art/oros/regular/oros-6.jpg',
-    'pics/art/oros/regular/oros-7.jpg',
-    'pics/art/oros/regular/oros-8.jpg',
-    'pics/art/oros/regular/oros-9.jpg'
+    '../pics/art/oros/regular/oros-1.jpg',
+    '../pics/art/oros/regular/oros-2.jpg',
+    '../pics/art/oros/regular/oros-3.jpg',
+    '../pics/art/oros/regular/oros-4.jpg',
+    '../pics/art/oros/regular/oros-5.jpg',
+    '../pics/art/oros/regular/oros-6.jpg',
+    '../pics/art/oros/regular/oros-7.jpg',
+    '../pics/art/oros/regular/oros-8.jpg',
+    '../pics/art/oros/regular/oros-9.jpg'
   ];
 
   var counter = 0;
