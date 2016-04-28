@@ -1,11 +1,11 @@
-$(() => {
+$(function() {
 
   var $menuIcon = $('#mobile-gallery-menu');
   var $artNavbar = $('#artist-navbar');
 
   var toggleLight = 'green';
 
-  $menuIcon.click(() => {
+  $menuIcon.click(function() {
     if (toggleLight === 'green') {
       $artNavbar.attr('class', 'gallery-piece--navbar--active');
       $menuIcon.attr('class', 'icon-cross2');

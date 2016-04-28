@@ -1,4 +1,4 @@
-$(() => {
+$(function() {
 
   var $menuIcon = $('#menu-close');
   var $artNavbar = $('#mobile-dev-nav');
@@ -24,11 +24,11 @@ $(() => {
     }
   }
 
-  $menuIcon.click(() => {
+  $menuIcon.click(function() {
     toggleShowMenu();
   });
 
-  $navBarList.click(() => {
+  $navBarList.click(function() {
     toggleShowMenu();
   });
 
