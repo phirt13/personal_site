@@ -1,20 +1,18 @@
-var express = require('express');
-var app = express();
+const express = require('express');
+const app = express();
 
-app.set('port', (process.env.PORT || 5000));
-
-app.use(express.static(__dirname + "/public"));
-
-app.get("/secret", function(request, response) {
-  response.send('Well done.  Tell nobody!');
-});
+const port = process.env.PORT || 5000;
 
 app.use(express.static(__dirname + '/public'));
 
-app.get('/*', function(req, res){
-  res.sendFile(__dirname + '/public/404.html');
+app.get("/secret", (request, response) => {
+  response.send(express.static(__dirname + '/public/secret/'));
 });
 
-app.listen(app.get('port'), function() {
-  console.log("Node app is running at localhost:" + app.get('port'));
+app.get('/*', (req, res) => {
+  res.sendFile(__dirname + '/public/pages/404.html');
+});
+
+app.listen(port, () => {
+  console.log("Node app is running at localhost:" + port);
 });
