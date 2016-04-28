@@ -1,10 +1,8 @@
-$(function() {
+$(() => {
 
   var $menuIcon = $('#menu-close');
   var $artNavbar = $('#mobile-dev-nav');
   var $navBarList = $('.mobile-dev-navbar--list');
-
-  console.log($navBarList);
 
   var toggleLight = 'green';
 
@@ -22,17 +20,16 @@ $(function() {
       toggleLight = 'green';
 
     } else {
-      console.log('Not Working');
+      process.stdout.write('Not Working');
     }
   }
 
-  $menuIcon.click(function() {
+  $menuIcon.click(() => {
     toggleShowMenu();
   });
 
-  $navBarList.click(function() {
+  $navBarList.click(() => {
     toggleShowMenu();
-  })
+  });
 
 });
-
