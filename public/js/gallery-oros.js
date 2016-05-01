@@ -22,7 +22,7 @@
 
       var getNum = parseInt(e.target.id.slice(10), 10);
       mainImage.setAttribute('src', pictureArray[getNum]);
-      counter = getNum
+      counter = getNum;
 
     }
 
