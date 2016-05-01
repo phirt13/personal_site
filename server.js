@@ -5,7 +5,7 @@ const port = process.env.PORT || 5000;
 
 app.use(express.static(__dirname + '/public'));
 
-app.get("/secret", (request, response) => {
+app.get('/secret', (request, response) => {
   response.send(express.static(__dirname + '/public/secret/'));
 });
 
@@ -14,5 +14,5 @@ app.get('/*', (req, res) => {
 });
 
 app.listen(port, () => {
-  console.log("Node app is running at localhost:" + port);
+  console.log('Node app is running at localhost:' + port);
 });
