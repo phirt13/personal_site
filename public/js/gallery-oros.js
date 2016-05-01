@@ -14,7 +14,6 @@
   ];
 
   var mainImage = document.getElementById('main-image');
-  console.log(mainImage);
   var parentThumbnail = document.getElementById('thumbnail-parent');
 
   parentThumbnail.addEventListener('click', function(e) {
@@ -30,7 +29,7 @@
   });
 
   mainImage.addEventListener('click', function(e) {
-    console.log(e.target);
+
     (counter === pictureArray.length - 1)
 
     ? counter = 0
