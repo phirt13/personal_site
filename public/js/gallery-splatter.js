@@ -1,32 +1,35 @@
-$(function() {
-  var $mainImage = $('#main-image');
-  var $thumbnailOne = $('#thumbnail-0');
-  var $thumbnailTwo = $('#thumbnail-1');
-
-  var pictures = [
-    'pics/art/sketches/splatter/regular/splatter-1.jpg',
-    'pics/art/sketches/splatter/regular/splatter-2.jpg'
-  ];
+(function() {
 
   var counter = 0;
+  var pictureArray = [
+    './../pics/art/sketches/splatter/regular/splatter-1.jpg',
+    './../pics/art/sketches/splatter/regular/splatter-2.jpg'
+  ];
 
-  $thumbnailOne.click(function() {
-    $mainImage.attr('src', pictures[0]);
-    counter = 0;
-  });
+  var mainImage = document.getElementById('main-image');
+  var parentThumbnail = document.getElementById('thumbnail-parent');
 
-  $thumbnailTwo.click(function() {
-    $mainImage.attr('src', pictures[1]);
-    counter = 1;
-  });
+  parentThumbnail.addEventListener('click', function(e) {
 
-  $mainImage.click(function() {
-    if(counter >= 1) {
-      counter = 0;
-      $mainImage.attr('src', pictures[counter]);
-    } else {
-      counter++ ;
-      $mainImage.attr('src', pictures[counter]);
+    if (e.target && e.target.matches('img.gallery-thumbnail--image')) {
+
+      var getNum = parseInt(e.target.id.slice(10), 10);
+      mainImage.setAttribute('src', pictureArray[getNum]);
+      counter = getNum;
+
     }
+
   });
-});
+
+  mainImage.addEventListener('click', function(e) {
+
+    (counter === pictureArray.length - 1)
+
+    ? counter = 0
+    : counter++;
+
+    mainImage.setAttribute('src', pictureArray[counter]);
+
+  });
+
+})();
