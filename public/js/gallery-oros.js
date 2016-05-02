@@ -2,15 +2,15 @@
 
   var counter = 0;
   var pictureArray = [
-    '../pics/art/oros/regular/oros-1.jpg',
-    '../pics/art/oros/regular/oros-2.jpg',
-    '../pics/art/oros/regular/oros-3.jpg',
-    '../pics/art/oros/regular/oros-4.jpg',
-    '../pics/art/oros/regular/oros-5.jpg',
-    '../pics/art/oros/regular/oros-6.jpg',
-    '../pics/art/oros/regular/oros-7.jpg',
-    '../pics/art/oros/regular/oros-8.jpg',
-    '../pics/art/oros/regular/oros-9.jpg'
+    './../pics/art/oros/regular/oros-1.jpg',
+    './../pics/art/oros/regular/oros-2.jpg',
+    './../pics/art/oros/regular/oros-3.jpg',
+    './../pics/art/oros/regular/oros-4.jpg',
+    './../pics/art/oros/regular/oros-5.jpg',
+    './../pics/art/oros/regular/oros-6.jpg',
+    './../pics/art/oros/regular/oros-7.jpg',
+    './../pics/art/oros/regular/oros-8.jpg',
+    './../pics/art/oros/regular/oros-9.jpg'
   ];
 
   var mainImage = document.getElementById('main-image');

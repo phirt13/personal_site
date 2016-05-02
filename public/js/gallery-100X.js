@@ -3,14 +3,14 @@
   var counter = 0;
   var pictureArray = [
     './../pics/art/100X/regular/100X-0.jpg',
-    '../pics/art/100X/regular/100X-1.jpg',
-    '../pics/art/100X/regular/100X-2.jpg',
-    '../pics/art/100X/regular/100X-3.jpg',
-    '../pics/art/100X/regular/100X-4.jpg',
-    '../pics/art/100X/regular/100X-5.jpg',
-    '../pics/art/100X/regular/100X-6.jpg',
-    '../pics/art/100X/regular/100X-7.jpg',
-    '../pics/art/100X/regular/100X-8.jpg'
+    './../pics/art/100X/regular/100X-1.jpg',
+    './../pics/art/100X/regular/100X-2.jpg',
+    './../pics/art/100X/regular/100X-3.jpg',
+    './../pics/art/100X/regular/100X-4.jpg',
+    './../pics/art/100X/regular/100X-5.jpg',
+    './../pics/art/100X/regular/100X-6.jpg',
+    './../pics/art/100X/regular/100X-7.jpg',
+    './../pics/art/100X/regular/100X-8.jpg'
   ];
 
   var mainImage = document.getElementById('main-image');
