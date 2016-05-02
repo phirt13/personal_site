@@ -1,39 +1,36 @@
-$(function() {
-  var $mainImage = $('#main-image');
-  var $thumbnailOne = $('#thumbnail-0');
-  var $thumbnailTwo = $('#thumbnail-1');
-  var $thumbnailThree = $('#thumbnail-2');
-
-  var pictures = [
-    'pics/art/sketches/anxious/regular/anxious-study-1.jpg',
-    'pics/art/sketches/anxious/regular/anxious-study-2.jpg',
-    'pics/art/sketches/anxious/regular/anxious-study-3.jpg'
-  ];
+(function() {
 
   var counter = 0;
+  var pictureArray = [
+    './../pics/art/sketches/anxious/regular/anxious-study-1.jpg',
+    './../pics/art/sketches/anxious/regular/anxious-study-2.jpg',
+    './../pics/art/sketches/anxious/regular/anxious-study-3.jpg'
+  ];
 
-  $thumbnailOne.click(function() {
-    $mainImage.attr('src', pictures[0]);
-    counter = 0;
-  });
+  var mainImage = document.getElementById('main-image');
+  var parentThumbnail = document.getElementById('thumbnail-parent');
 
-  $thumbnailTwo.click(function() {
-    $mainImage.attr('src', pictures[1]);
-    counter = 1;
-  });
+  parentThumbnail.addEventListener('click', function(e) {
 
-  $thumbnailThree.click(function() {
-    $mainImage.attr('src', pictures[2]);
-    counter = 2;
-  });
+    if (e.target && e.target.matches('img.gallery-thumbnail--image')) {
 
-  $mainImage.click(function() {
-    if(counter >= 2) {
-      counter = 0;
-      $mainImage.attr('src', pictures[counter]);
-    } else {
-      counter++ ;
-      $mainImage.attr('src', pictures[counter]);
+      var getNum = parseInt(e.target.id.slice(10), 10);
+      mainImage.setAttribute('src', pictureArray[getNum]);
+      counter = getNum;
+
     }
+
   });
-});
+
+  mainImage.addEventListener('click', function(e) {
+
+    (counter === pictureArray.length - 1)
+
+    ? counter = 0
+    : counter++;
+
+    mainImage.setAttribute('src', pictureArray[counter]);
+
+  });
+
+})();
