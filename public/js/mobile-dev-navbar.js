@@ -4,8 +4,6 @@ $(function() {
   var $artNavbar = $('#mobile-dev-nav');
   var $navBarList = $('.mobile-dev-navbar--list');
 
-  console.log($navBarList);
-
   var toggleLight = 'green';
 
   function toggleShowMenu() {
@@ -22,7 +20,7 @@ $(function() {
       toggleLight = 'green';
 
     } else {
-      console.log('Not Working');
+      process.stdout.write('Not Working');
     }
   }
 
@@ -32,7 +30,6 @@ $(function() {
 
   $navBarList.click(function() {
     toggleShowMenu();
-  })
+  });
 
 });
-
